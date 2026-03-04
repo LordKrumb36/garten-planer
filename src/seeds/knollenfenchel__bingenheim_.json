@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Knollenfenchel (Bingenheimer)",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "instructions": "Sonnig und windgeschützt. Tiefgründiger, humusreicher Boden. Gleichmäßige Feuchtigkeit entscheidend für Knollenbildung. Dunkelkeimer (Saattiefe 1-2 cm). Sommeranbau (Aussaat Juni/Juli) verringert Schossrisiko. Anhäufeln, wenn hühnereigroß, fördert zarte Knollen.",
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V/D",
+      "Mai": "V/D",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Salate", "Gurken", "Erbsen", "Pastinaken", "Sellerie", "Zwiebeln", "Knoblauch"],
+    "badNeighbors": ["Bohnen", "Tomaten", "Kohlarten", "Wermut", "Dill", "Kümmel", "Koriander"]
+  }
+]

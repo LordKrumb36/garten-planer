@@ -1,0 +1,8 @@
+node_modules
+dist
+.vercel
+.env
+*.local
+
+pending_research.log
+*.log

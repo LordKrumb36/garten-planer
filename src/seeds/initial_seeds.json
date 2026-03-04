@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Kohlrabi 'Azur Star'",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "calendar": { "Jan": "V", "Feb": "V/D", "Mär": "V/D", "Apr": "V/D", "Mai": "V/D", "Jun": "V/D/E", "Jul": "V/D/E", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "instructions": "Sonnig bis halbschattig. Gleichmäßig feucht halten (beugt Platzen vor). Nicht zu tief pflanzen.",
+    "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln"],
+    "badNeighbors": []
+  },
+  {
+    "name": "Radieschen 'French Breakfast'",
+    "category": "Radieschen",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Feb": "D", "Mär": "D", "Apr": "D", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "D/E", "Sep": "D/E", "Okt": "E" },
+    "instructions": "Schnellwüchsig (halblang mit weißer Spitze). Gleichmäßige Wasserversorgung wichtig gegen Schärfe/Holzigkeit.",
+    "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln", "Kohlrabi", "Kopfsalat", "Kresse", "Mangold", "Möhren", "Spinat", "Tomaten"],
+    "badNeighbors": ["Gurken"]
+  },
+  {
+    "name": "Radieschen 'Trio'",
+    "category": "Radieschen",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Feb": "D", "Mär": "D", "Apr": "D", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "D/E", "Sep": "D/E", "Okt": "E" },
+    "instructions": "Mischung aus Rudi (rot), Eiszapfen (weiß) und French Breakfast (rot-weiß).",
+    "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln", "Kohlrabi", "Kopfsalat", "Kresse", "Mangold", "Möhren", "Spinat", "Tomaten"],
+    "badNeighbors": ["Gurken"]
+  },
+  {
+    "name": "Dost / Wilder Majoran",
+    "category": "Kräuter",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Feb": "V", "Mär": "V", "Apr": "D/E", "Mai": "D/E", "Jun": "E", "Jul": "E", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "instructions": "Lichtkeimer. Vollsonnig, eher magerer und trockener Boden. Mehrjährig.",
+    "goodNeighbors": ["Basilikum", "Bohnenkraut", "Rosmarin", "Salbei", "Thymian", "Schnittlauch", "Pfefferminze", "Zwiebeln", "Knoblauch", "Tomaten", "Möhren", "Gurken", "Zucchini", "Radieschen", "Erbsen", "Bohnen"],
+    "badNeighbors": ["Wermut"]
+  },
+  {
+    "name": "Artischocke 'Green Globe'",
+    "category": "Blumen",
+    "nutrientConsumption": "Starkzehrer",
+    "calendar": { "Feb": "V", "Mär": "V", "Apr": "V", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "instructions": "Samen 2-3h vorquellen. Sehr platzbedürftig. Überwinterung mit Frostschutz möglich.",
+    "goodNeighbors": ["Salat", "Fenchel", "Kohlarten", "Spinat", "Radieschen", "Salbei", "Thymian", "Ringelblumen"],
+    "badNeighbors": ["Sellerie", "Zwiebeln", "Knoblauch", "Schnittlauch", "Schwarzwurzeln", "Topinambur", "Chicorée"]
+  },
+  {
+    "name": "Knollenfenchel 'Fenno'",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "calendar": { "Mär": "V", "Apr": "V", "Mai": "V", "Jun": "V", "Jul": "V/E", "Aug": "E", "Sep": "E", "Okt": "E", "Nov": "E" },
+    "instructions": "Sonnig, humos, feucht. Keimtemperatur 20-22 °C. Schossfest.",
+    "goodNeighbors": ["Endivien", "Erbsen", "Feldsalat", "Gurken", "Kopfsalat", "Pflücksalat", "Salbei", "Zuckerhut", "Chicorée", "Radicchio"],
+    "badNeighbors": ["Dill", "Bohnen", "Kümmel", "Tomaten"]
+  },
+  {
+    "name": "Koriander 'Konrad'",
+    "category": "Kräuter",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Mär": "D", "Apr": "D", "Mai": "D", "Jun": "E", "Jul": "D/E", "Aug": "D/E", "Sep": "E" },
+    "instructions": "Sonnig. Nicht frisch düngen (beugt Blattläusen vor). Spät schießend.",
+    "goodNeighbors": ["Gurken", "Kohlarten", "Rote Bete"],
+    "badNeighbors": []
+  },
+  {
+    "name": "Dicke Bohne 'Ratio'",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Mär": "D", "Apr": "D", "Jun": "E", "Jul": "E", "Aug": "E" },
+    "instructions": "Saattiefe 5-8 cm. Sonnig bis halbschattig. Sehr frühreife Sorte.",
+    "goodNeighbors": ["Kartoffeln", "Bohnenkraut", "Erdbeeren", "Gurken", "Kohlarten", "Kohlrabi", "Kopfsalat", "Pflücksalat", "Rote Bete", "Sellerie", "Tomaten"],
+    "badNeighbors": ["Erbsen", "Fenchel", "Knoblauch", "Lauch", "Zwiebeln"]
+  },
+  {
+    "name": "Zuckererbse 'Ambrosia'",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Mär": "D", "Apr": "D", "Mai": "D", "Jun": "E", "Jul": "E", "Aug": "E" },
+    "instructions": "Saattiefe 3-5 cm. Sonnig, Kaiserschote (Hülsen komplett essbar).",
+    "goodNeighbors": ["Dill", "Fenchel", "Gurken", "Kohlarten", "Kohlrabi", "Kopfsalat", "Mais", "Möhren", "Radieschen", "Zucchini"],
+    "badNeighbors": ["Bohnen", "Kartoffeln", "Knoblauch", "Lauch", "Tomaten", "Zwiebeln"]
+  },
+  {
+    "name": "Petersilie 'Glatte'",
+    "category": "Kräuter",
+    "nutrientConsumption": "Mittelzehrer",
+    "calendar": { "Mär": "D/E", "Apr": "D/E", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "E", "Sep": "E", "Okt": "E", "Nov": "E" },
+    "instructions": "Keimdauer ca. 3 Wochen (stets feucht halten). Sonnig bis halbschattig.",
+    "goodNeighbors": ["Tomaten", "Spargel", "Radieschen"],
+    "badNeighbors": ["Kopfsalat", "Fenchel"]
+  },
+  {
+    "name": "Türk. Drachenkopf",
+    "category": "Blumen",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Mär": "V", "Apr": "V/D", "Mai": "V/D", "Jun": "D/E", "Jul": "E", "Aug": "E", "Sep": "E" },
+    "instructions": "Lichtkeimer. Sonnig. Hervorragende Bienenweide, intensiv zitroniger Duft.",
+    "goodNeighbors": ["Tomaten", "Gurken", "Kapuzinerkresse", "Ringelblumen", "Rosen"],
+    "badNeighbors": []
+  },
+  {
+    "name": "Vergissmeinnicht (Chin.)",
+    "category": "Blumen",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Mär": "V", "Apr": "V/D/E", "Mai": "V/D/E", "Jun": "D/E" },
+    "instructions": "Dunkelkeimer. Sonnig bis halbschattig. Trockenheitsverträglich.",
+    "goodNeighbors": ["Tulpen", "Narzissen", "Hyazinthen", "Farne", "Funkien", "Tränendes Herz", "Primeln", "Obstbäume", "Beerensträucher", "Salat", "Erdbeeren"],
+    "badNeighbors": ["Lavendel", "Thymian"]
+  },
+  {
+    "name": "Muskatellersalbei",
+    "category": "Blumen",
+    "nutrientConsumption": "Mittelzehrer",
+    "calendar": { "Mär": "V", "Apr": "V/D", "Mai": "V/D", "Jun": "V/D/E", "Jul": "E", "Aug": "E", "Sep": "E" },
+    "instructions": "Zweijährig. Imposante Höhe. Sonnig, durchlässiger Boden.",
+    "goodNeighbors": ["Fenchel", "Möhren", "Zwiebeln", "Kohlarten"],
+    "badNeighbors": []
+  },
+  {
+    "name": "Edamame 'Hokkai Green'",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Apr": "V", "Mai": "D", "Jun": "D", "Jul": "E", "Aug": "E", "Sep": "E" },
+    "instructions": "Braucht viel Wärme. Ernte, wenn Hülsen prall and hellgrün sind.",
+    "goodNeighbors": ["Bohnenkraut", "Erdbeeren", "Gurken", "Kartoffeln", "Kohlarten", "Kohlrabi", "Kopfsalat", "Pflücksalat", "Rote Bete", "Sellerie", "Tomaten"],
+    "badNeighbors": ["Erbsen", "Fenchel", "Knoblauch", "Lauch", "Zwiebeln"]
+  },
+  {
+    "name": "Anis-Ysop",
+    "category": "Kräuter",
+    "nutrientConsumption": "Schwachzehrer",
+    "calendar": { "Apr": "V/E", "Mai": "D/E", "Jun": "D/E", "Jul": "E", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "instructions": "Lichtkeimer. Sonnig bis halbschattig. Mehrjährig.",
+    "goodNeighbors": ["Echinacea", "Gaura", "Coreopsis", "Achillea", "Astern", "Lavendel", "Salbei", "Thymian", "Rosmarin", "Ziergräser", "Kohlarten", "Salat"],
+    "badNeighbors": ["Kürbis", "Zucchini"]
+  },
+  {
+    "name": "Grünkohl 'Lerchenzungen'",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "calendar": { "Mai": "D", "Jun": "D", "Okt": "E", "Nov": "E", "Dez": "E", "Jan": "E" },
+    "instructions": "Sonnig/halbschattig. Sehr frosthart. Aroma verbessert sich nach Frost.",
+    "goodNeighbors": ["Bohnen", "Dill", "Endivien", "Erbsen", "Kamille", "Kartoffeln", "Kopfsalat", "Koriander", "Kümmel", "Lauch", "Mangold", "Pfefferminze", "Pflücksalat", "Rote Bete", "Sellerie", "Spinat", "Tagetes"],
+    "badNeighbors": ["Erdbeeren", "Senf", "Knoblauch", "Zwiebeln"]
+  }
+]

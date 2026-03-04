@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Bunter Mangold",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "instructions": "Sonnig bis halbschattig. Nährstoffreicher, humoser und tiefgründiger Boden (Mittel- bis Starkzehrer). Regelmäßig gießen, Staunässe vermeiden. Ernte: Immer die äußeren Blätter von unten abbrechen, das Herz stehen lassen für kontinuierliches Nachwachsen.",
+    "calendar": {
+      "Feb": "V",
+      "Mär": "V",
+      "Apr": "V/D",
+      "Mai": "D",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Buschbohnen", "Kohlarten", "Möhren", "Radieschen", "Rettich", "Erbsen", "Kohlrabi", "Zwiebeln", "Knoblauch", "Salate"],
+    "badNeighbors": ["Rote Bete", "Spinat"]
+  }
+]

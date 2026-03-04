@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Spinat 'Verdil' (Bingenheimer)",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "instructions": "Sonnig bis halbschattig. Dunkelkeimer (Saattiefe 2-3 cm). Ideal für Herbst- und Überwinterungsanbau. Reihenabstand 20-30 cm. Liebt feuchten, lockeren Boden. Bei Hitze/langen Tagen schossgefährdet. Saponine fördern Nachbarpflanzen.",
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D/E",
+      "Mai": "E",
+      "Jul": "D",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E",
+      "Jan": "E",
+      "Feb": "E"
+    },
+    "goodNeighbors": ["Erdbeeren", "Tomaten", "Kartoffeln", "Bohnen", "Erbsen", "Kohlarten", "Möhren", "Radieschen", "Rettich", "Gurken", "Sellerie", "Zwiebeln"],
+    "badNeighbors": ["Rote Bete", "Mangold", "Melde"]
+  }
+]

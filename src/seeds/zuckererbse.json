@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Zuckererbse 'Ambrosia' (Bingenheimer)",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "instructions": "Sonnig und offen. Lockerer, humoser Boden. Keine Stickstoffdüngung nötig. Saattiefe 3 cm. Benötigt Rankhilfe (ca. 70 cm hoch). Gleichmäßig feucht halten während Blüte/Hülsenbildung. Ernten, wenn Hülsen fleischig, aber Körner noch flach sind. Anbaupause: 3-5 Jahre.",
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E"
+    },
+    "goodNeighbors": ["Dill", "Fenchel", "Gurken", "Kohlarten", "Mais", "Möhren", "Radieschen", "Salat", "Zucchini"],
+    "badNeighbors": ["Bohnen", "Lauch", "Zwiebeln", "Knoblauch", "Tomaten", "Schnittlauch", "Kartoffeln"]
+  }
+]
