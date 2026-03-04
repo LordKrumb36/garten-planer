@@ -774,6 +774,21 @@ tr:hover {
   object-fit: cover;
 }
 
+.broken-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f7fafc;
+  color: #a0aec0;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 .delete-image-btn {
   position: absolute;
   top: 0.5rem;

@@ -25,7 +25,12 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSeed, setSelectedSeed] = useState<SeedData | null>(null);
   const [selectedBedForGallery, setSelectedBedForGallery] = useState<Bed | null>(null);
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+
+  const handleImageError = (url: string) => {
+    setImageErrors(prev => ({ ...prev, [url]: true }));
+  };
   const [seedToEdit, setSeedToEdit] = useState<SeedData | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [customSeeds, setCustomSeeds] = useState<SeedData[]>([]);
@@ -556,7 +561,18 @@ function App() {
               ) : (
                 selectedBedForGallery.images.map((url, idx) => (
                   <div key={idx} className="gallery-item">
-                    <img src={url} alt={`Entwicklung Schritt ${idx + 1}`} />
+                    {imageErrors[url] ? (
+                      <div className="broken-image">
+                        <ImageIcon size={24} />
+                        <span>Link ungültig</span>
+                      </div>
+                    ) : (
+                      <img 
+                        src={url} 
+                        alt={`Entwicklung Schritt ${idx + 1}`} 
+                        onError={() => handleImageError(url)}
+                      />
+                    )}
                     <button 
                       className="delete-image-btn"
                       onClick={() => handleRemoveImageFromBed(selectedBedForGallery.id, url)}
