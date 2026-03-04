@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2 } from 'lucide-react';
+import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2, Camera, Image as ImageIcon } from 'lucide-react';
 import { seedData as staticSeedData, months, SeedData } from './data';
 import './App.css';
 
@@ -11,6 +11,7 @@ interface Bed {
   id: string;
   name: string;
   rows: Row[];
+  images?: string[];
 }
 
 const generateId = () => {
@@ -23,6 +24,7 @@ const generateId = () => {
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSeed, setSelectedSeed] = useState<SeedData | null>(null);
+  const [selectedBedForGallery, setSelectedBedForGallery] = useState<Bed | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [seedToEdit, setSeedToEdit] = useState<SeedData | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
@@ -91,6 +93,26 @@ function App() {
 
   const handleRemoveRow = (bedId: string, rowIndex: number) => {
     setBeds(beds.map(b => b.id === bedId ? { ...b, rows: b.rows.filter((_, i) => i !== rowIndex) } : b));
+  };
+
+  const handleAddImageToBed = (bedId: string) => {
+    const url = window.prompt("Bitte Bild-URL eingeben (z.B. von einem Cloud-Speicher):");
+    if (url) {
+      setBeds(beds.map(b => b.id === bedId ? { ...b, images: [...(b.images || []), url] } : b));
+      // If the gallery is open, update the selected bed to reflect the new image
+      if (selectedBedForGallery?.id === bedId) {
+        const bed = beds.find(b => b.id === bedId);
+        if (bed) setSelectedBedForGallery({ ...bed, images: [...(bed.images || []), url] });
+      }
+    }
+  };
+
+  const handleRemoveImageFromBed = (bedId: string, imageUrl: string) => {
+    if (!window.confirm("Bild wirklich löschen?")) return;
+    setBeds(beds.map(b => b.id === bedId ? { ...b, images: (b.images || []).filter(img => img !== imageUrl) } : b));
+    if (selectedBedForGallery?.id === bedId) {
+      setSelectedBedForGallery(prev => prev ? { ...prev, images: (prev.images || []).filter(img => img !== imageUrl) } : null);
+    }
   };
 
   const getCompanionInfo = (seedName: string, bedRows: Row[]) => {
@@ -316,11 +338,21 @@ function App() {
             {beds.map((bed) => (
               <div key={bed.id} className="bed-card">
                 <div className="bed-header">
-                  <input 
-                    className="bed-name-input"
-                    value={bed.name}
-                    onChange={(e) => handleUpdateBedName(bed.id, e.target.value)}
-                  />
+                  <div className="bed-header-left">
+                    <input 
+                      className="bed-name-input"
+                      value={bed.name}
+                      onChange={(e) => handleUpdateBedName(bed.id, e.target.value)}
+                    />
+                    <button 
+                      className={`gallery-trigger-btn ${(bed.images && bed.images.length > 0) ? 'has-images' : ''}`}
+                      onClick={() => setSelectedBedForGallery(bed)}
+                      title="Galerie öffnen"
+                    >
+                      <Camera size={16} />
+                      {bed.images && bed.images.length > 0 && <span className="image-count">{bed.images.length}</span>}
+                    </button>
+                  </div>
                   <button className="remove-bed-btn" onClick={() => handleRemoveBed(bed.id)} title="Beet löschen">
                     <X size={16} />
                   </button>
@@ -496,6 +528,44 @@ function App() {
                   <span className="month-val">{selectedSeed.calendar[m] || '-'}</span>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Gallery Modal */}
+      {selectedBedForGallery && (
+        <div className="modal-overlay" onClick={() => setSelectedBedForGallery(null)}>
+          <div className="modal-content gallery-modal" onClick={e => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setSelectedBedForGallery(null)}><X /></button>
+            <div className="gallery-header">
+              <h2>Entwicklung: {selectedBedForGallery.name}</h2>
+              <button 
+                className="add-image-btn"
+                onClick={() => handleAddImageToBed(selectedBedForGallery.id)}
+              >
+                <Camera size={18} /> Foto hinzufügen
+              </button>
+            </div>
+
+            <div className="gallery-grid">
+              {(!selectedBedForGallery.images || selectedBedForGallery.images.length === 0) ? (
+                <div className="empty-gallery">
+                  <ImageIcon size={48} />
+                  <p>Noch keine Fotos für dieses Beet vorhanden.</p>
+                </div>
+              ) : (
+                selectedBedForGallery.images.map((url, idx) => (
+                  <div key={idx} className="gallery-item">
+                    <img src={url} alt={`Entwicklung Schritt ${idx + 1}`} />
+                    <button 
+                      className="delete-image-btn"
+                      onClick={() => handleRemoveImageFromBed(selectedBedForGallery.id, url)}
+                    >
+                      <Trash2 size={14} />
+                    </button>
+                  </div>
+                ))
+              )}
             </div>
           </div>
         </div>
