@@ -25,6 +25,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSeed, setSelectedSeed] = useState<SeedData | null>(null);
   const [selectedBedForGallery, setSelectedBedForGallery] = useState<Bed | null>(null);
+  const [availableAssets, setAvailableAssets] = useState<string[]>([]);
+  const [isAssetSelectorOpen, setIsAssetSelectorOpen] = useState(false);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
@@ -118,6 +120,29 @@ function App() {
     if (selectedBedForGallery?.id === bedId) {
       setSelectedBedForGallery(prev => prev ? { ...prev, images: (prev.images || []).filter(img => img !== imageUrl) } : null);
     }
+  };
+
+  const fetchAssets = async () => {
+    try {
+      const response = await fetch('/api/list-images');
+      if (response.ok) {
+        const files = await response.json();
+        setAvailableAssets(files);
+        setIsAssetSelectorOpen(true);
+      }
+    } catch (err) {
+      console.error("Failed to fetch assets:", err);
+    }
+  };
+
+  const handleAssetSelect = (filename: string) => {
+    if (!selectedBedForGallery) return;
+    const url = `/images/${filename}`;
+    const bedId = selectedBedForGallery.id;
+    
+    setBeds(beds.map(b => b.id === bedId ? { ...b, images: [...(b.images || []), url] } : b));
+    setSelectedBedForGallery(prev => prev ? { ...prev, images: [...(prev.images || []), url] } : null);
+    setIsAssetSelectorOpen(false);
   };
 
   const getCompanionInfo = (seedName: string, bedRows: Row[]) => {
@@ -544,12 +569,20 @@ function App() {
             <button className="close-btn" onClick={() => setSelectedBedForGallery(null)}><X /></button>
             <div className="gallery-header">
               <h2>Entwicklung: {selectedBedForGallery.name}</h2>
-              <button 
-                className="add-image-btn"
-                onClick={() => handleAddImageToBed(selectedBedForGallery.id)}
-              >
-                <Camera size={18} /> Foto hinzufügen
-              </button>
+              <div className="gallery-actions">
+                <button 
+                  className="add-image-btn secondary"
+                  onClick={fetchAssets}
+                >
+                  <ImageIcon size={18} /> Asset wählen
+                </button>
+                <button 
+                  className="add-image-btn"
+                  onClick={() => handleAddImageToBed(selectedBedForGallery.id)}
+                >
+                  <Camera size={18} /> URL hinzufügen
+                </button>
+              </div>
             </div>
 
             <div className="gallery-grid">
@@ -579,6 +612,31 @@ function App() {
                     >
                       <Trash2 size={14} />
                     </button>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Asset Selector Modal */}
+      {isAssetSelectorOpen && (
+        <div className="modal-overlay asset-selector-overlay" onClick={() => setIsAssetSelectorOpen(false)}>
+          <div className="modal-content asset-selector-modal" onClick={e => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setIsAssetSelectorOpen(false)}><X /></button>
+            <h2>Bilder aus /public/images/</h2>
+            <p className="asset-hint">Kopiere deine Bilder in den Projektordner, um sie hier zu sehen.</p>
+            <div className="asset-grid">
+              {availableAssets.length === 0 ? (
+                <div className="empty-assets">
+                  <p>Keine Bilder im Ordner <code>public/images/</code> gefunden.</p>
+                </div>
+              ) : (
+                availableAssets.map(file => (
+                  <div key={file} className="asset-item" onClick={() => handleAssetSelect(file)}>
+                    <img src={`/images/${file}`} alt={file} />
+                    <span className="asset-name">{file}</span>
                   </div>
                 ))
               )}

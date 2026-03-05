@@ -59,6 +59,17 @@ const saveSeedPlugin = () => ({
             res.end(JSON.stringify({ error: err.message }));
           }
         });
+      } else if (req.url === '/api/list-images' && req.method === 'GET') {
+        const imagesDir = path.resolve(__dirname, 'public/images');
+        if (!fs.existsSync(imagesDir)) {
+          res.end(JSON.stringify([]));
+          return;
+        }
+        const files = fs.readdirSync(imagesDir).filter(f => 
+          /\.(jpg|jpeg|png|gif|webp)$/i.test(f)
+        );
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify(files));
       } else if (req.url === '/api/trigger-sync' && req.method === 'POST') {
         // Just log it for the agent to see in the console
         console.log('--- SYNC TRIGGERED ---');
