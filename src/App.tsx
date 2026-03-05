@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2, Camera, Image as ImageIcon } from 'lucide-react';
+import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2, Camera, Image as ImageIcon, Cloud } from 'lucide-react';
 import { seedData as staticSeedData, months, SeedData } from './data';
+import staticBedsData from './beds_data.json';
 import './App.css';
 
 interface Row {
@@ -38,6 +39,11 @@ function App() {
   const [customSeeds, setCustomSeeds] = useState<SeedData[]>([]);
   const [beds, setBeds] = useState<Bed[]>(() => {
     try {
+      // Priority 1: Check if we have bundled beds data (from git/cloud)
+      if (staticBedsData && Array.isArray(staticBedsData) && staticBedsData.length > 0) {
+        return staticBedsData;
+      }
+
       const savedBeds = localStorage.getItem('garden-beds-v2');
       if (savedBeds) return JSON.parse(savedBeds);
       
@@ -77,6 +83,24 @@ function App() {
   useEffect(() => {
     localStorage.setItem('garden-beds-v2', JSON.stringify(beds));
   }, [beds]);
+
+  const handleSaveBedsToCloud = async () => {
+    setIsSyncing(true);
+    try {
+      const response = await fetch('/api/save-beds', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ beds }),
+      });
+      if (response.ok) {
+        alert("Planung lokal gesichert! Bitte Gemini jetzt sagen: 'Beete zu GitHub pushen', damit es online erscheint.");
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
 
   const handleAddBed = () => {
     setBeds([...beds, { id: generateId(), name: `Beet ${beds.length + 1}`, rows: [] }]);
@@ -268,6 +292,9 @@ function App() {
           </div>
           <button className={`sync-btn ${isSyncing ? 'loading' : ''}`} onClick={handleSync} disabled={isSyncing}>
             <RefreshCw size={20} /> {isSyncing ? 'Synchronisiere...' : 'Synchronisieren'}
+          </button>
+          <button className={`sync-btn save-beds-btn ${isSyncing ? 'loading' : ''}`} onClick={handleSaveBedsToCloud} disabled={isSyncing}>
+            <Cloud size={20} /> {isSyncing ? 'Sichere...' : 'Planung sichern'}
           </button>
           <button className="add-btn" onClick={() => setIsAddModalOpen(true)}>
             <Plus size={20} /> Saatgut hinzufügen

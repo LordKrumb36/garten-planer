@@ -59,6 +59,22 @@ const saveSeedPlugin = () => ({
             res.end(JSON.stringify({ error: err.message }));
           }
         });
+      } else if (req.url === '/api/save-beds' && req.method === 'POST') {
+        let body = '';
+        req.on('data', chunk => { body += chunk; });
+        req.on('end', () => {
+          try {
+            const { beds } = JSON.parse(body);
+            const filePath = path.resolve(__dirname, 'src/beds_data.json');
+            fs.writeFileSync(filePath, JSON.stringify(beds, null, 2));
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify({ success: true }));
+          } catch (err) {
+            res.statusCode = 500;
+            res.end(JSON.stringify({ error: err.message }));
+          }
+        });
       } else if (req.url === '/api/list-images' && req.method === 'GET') {
         const imagesDir = path.resolve(__dirname, 'public/images');
         if (!fs.existsSync(imagesDir)) {

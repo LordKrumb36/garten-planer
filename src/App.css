@@ -108,6 +108,16 @@
   border-color: #cbd5e0;
 }
 
+.save-beds-btn {
+  color: #3182ce;
+  border-color: #bee3f8;
+}
+
+.save-beds-btn:hover:not(:disabled) {
+  background: #ebf8ff;
+  border-color: #3182ce;
+}
+
 .sync-btn.loading svg {
   animation: spin 1s linear infinite;
 }
