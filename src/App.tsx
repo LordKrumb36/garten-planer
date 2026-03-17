@@ -320,9 +320,9 @@ function App() {
           <h3>🌱 Was du jetzt tun kannst (März)</h3>
           <div className="spotlight-grid">
             <div className="spotlight-card direct">
-              <h4>Direktsaat (Beet)</h4>
+              <h4>Aussaat Freiland / Pflanzung (Beet)</h4>
               <ul>
-                {activeThisMonth.filter(s => s.calendar[currentMonth]?.includes('D')).map(s => (
+                {activeThisMonth.filter(s => s.calendar[currentMonth]?.includes('P')).map(s => (
                   <li key={s.name} onClick={() => setSelectedSeed(s)} className="clickable-seed">
                     {s.name} {!s.instructions && <span className="pending-dot" title="Forschung ausstehend" />}
                   </li>
@@ -373,7 +373,7 @@ function App() {
                       const type = seed.calendar[m];
                       return (
                         <td key={m} className={`cell ${type ? 'active' : ''} ${m === currentMonth ? 'current-col' : ''}`}>
-                          {type && <span className={`badge ${type.includes('V') ? 'v' : ''} ${type.includes('D') ? 'd' : ''} ${type.includes('E') ? 'e' : ''}`}>{type}</span>}
+                          {type && <span className={`badge ${type.includes('V') ? 'v' : ''} ${type.includes('P') ? 'd' : ''} ${type.includes('E') ? 'e' : ''}`}>{type}</span>}
                         </td>
                       );
                     })}
@@ -506,11 +506,11 @@ function App() {
               </div>
               
               <div className="calendar-input-grid">
-                <label style={{ gridColumn: '1 / -1' }}>Anbaukalender (V=Voranzucht, D=Direktsaat)</label>
+                <label style={{ gridColumn: '1 / -1' }}>Anbaukalender (V=Voranzucht, P=Aussaat Freiland / Pflanzung)</label>
                 {months.map(m => (
                   <div key={m} className="month-input">
                     <span>{m}</span>
-                    <input name={`month-${m}`} defaultValue={seedToEdit?.calendar[m] || ''} placeholder="V/D" maxLength={3} />
+                    <input name={`month-${m}`} defaultValue={seedToEdit?.calendar[m] || ''} placeholder="V/P" maxLength={3} />
                   </div>
                 ))}
               </div>
