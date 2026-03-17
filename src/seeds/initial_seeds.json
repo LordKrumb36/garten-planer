@@ -48,8 +48,8 @@
     "name": "Knollenfenchel 'Fenno'",
     "category": "Gemüse",
     "nutrientConsumption": "Mittelzehrer",
-    "calendar": { "Mär": "V", "Apr": "V", "Mai": "V", "Jun": "V", "Jul": "V/E", "Aug": "E", "Sep": "E", "Okt": "E", "Nov": "E" },
-    "instructions": "Sonnig, humos, feucht. Keimtemperatur 20-22 °C. Schossfest.",
+    "calendar": { "Jan": "V", "Feb": "V", "Mär": "P", "Mai": "E", "Jun": "V/E", "Jul": "V/P", "Aug": "P", "Sep": "E", "Okt": "E" },
+    "instructions": "Sonnig, humos, feucht. Keimtemperatur 20-22 °C. Schossfest. Jungpflanzen nicht zu tief setzen (Knolle muss oberhalb des Bodens sitzen).",
     "goodNeighbors": ["Endivien", "Erbsen", "Feldsalat", "Gurken", "Kopfsalat", "Pflücksalat", "Salbei", "Zuckerhut", "Chicorée", "Radicchio"],
     "badNeighbors": ["Dill", "Bohnen", "Kümmel", "Tomaten"]
   },
