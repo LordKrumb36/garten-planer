@@ -5,10 +5,10 @@
     "nutrientConsumption": "Mittelzehrer",
     "instructions": "Sonnig bis halbschattig. Lockerer, humoser und tiefgründiger Boden (Mittelzehrer). Direktsaat ab Mitte April bis Juli (Saattiefe 2-3 cm). Regelmäßig hacken und mulchen. Samen liegen oft in Knäueln vor, daher nach dem Auflaufen vereinzeln (Abstand 10-15 cm).",
     "calendar": {
-      "Apr": "D",
-      "Mai": "D",
-      "Jun": "D",
-      "Jul": "D/E",
+      "Apr": "P",
+      "Mai": "P",
+      "Jun": "P",
+      "Jul": "P/E",
       "Aug": "E",
       "Sep": "E",
       "Okt": "E"

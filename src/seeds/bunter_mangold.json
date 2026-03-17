@@ -7,12 +7,12 @@
     "calendar": {
       "Feb": "V",
       "Mär": "V",
-      "Apr": "V/D",
-      "Mai": "D",
-      "Jun": "D/E",
-      "Jul": "D/E",
-      "Aug": "D/E",
-      "Sep": "D/E",
+      "Apr": "V/P",
+      "Mai": "P",
+      "Jun": "P/E",
+      "Jul": "P/E",
+      "Aug": "P/E",
+      "Sep": "P/E",
       "Okt": "E"
     },
     "goodNeighbors": ["Buschbohnen", "Kohlarten", "Möhren", "Radieschen", "Rettich", "Erbsen", "Kohlrabi", "Zwiebeln", "Knoblauch", "Salate"],
