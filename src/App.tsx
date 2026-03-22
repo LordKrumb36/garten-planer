@@ -290,6 +290,12 @@ function App() {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
+          <button className="sync-btn" onClick={() => window.open('/2024_Aussaatkalender-Bingenheimer-Saatgut.pdf', '_blank')}>
+            <Calendar size={20} /> Kalender (PDF)
+          </button>
+          <button className="sync-btn" onClick={() => window.open('/Mischkulturen.pdf', '_blank')}>
+            <Leaf size={20} /> Mischkulturen (PDF)
+          </button>
           <button className={`sync-btn ${isSyncing ? 'loading' : ''}`} onClick={handleSync} disabled={isSyncing}>
             <RefreshCw size={20} /> {isSyncing ? 'Synchronisiere...' : 'Synchronisieren'}
           </button>
@@ -322,7 +328,7 @@ function App() {
             <div className="spotlight-card direct">
               <h4>Aussaat Freiland / Pflanzung (Beet)</h4>
               <ul>
-                {activeThisMonth.filter(s => s.calendar[currentMonth]?.includes('P')).map(s => (
+                {activeThisMonth.filter(s => s.calendar[currentMonth]?.includes('P') || s.calendar[currentMonth]?.includes('D')).map(s => (
                   <li key={s.name} onClick={() => setSelectedSeed(s)} className="clickable-seed">
                     {s.name} {!s.instructions && <span className="pending-dot" title="Forschung ausstehend" />}
                   </li>
@@ -343,7 +349,15 @@ function App() {
         </section>
 
         <section className="calendar-section">
-          <h3>📅 Anbaukalender</h3>
+          <div className="section-header">
+            <h3>📅 Anbaukalender</h3>
+            <div className="calendar-legend">
+              <span className="legend-item"><span className="badge v">V</span> Voranzucht</span>
+              <span className="legend-item"><span className="badge d">D</span> Direktsaat</span>
+              <span className="legend-item"><span className="badge p">P</span> Pflanzung</span>
+              <span className="legend-item"><span className="badge e">E</span> Ernte</span>
+            </div>
+          </div>
           <div className="table-wrapper">
             <table className="calendar-table">
               <thead>
@@ -373,7 +387,7 @@ function App() {
                       const type = seed.calendar[m];
                       return (
                         <td key={m} className={`cell ${type ? 'active' : ''} ${m === currentMonth ? 'current-col' : ''}`}>
-                          {type && <span className={`badge ${type.includes('V') ? 'v' : ''} ${type.includes('P') ? 'd' : ''} ${type.includes('E') ? 'e' : ''}`}>{type}</span>}
+                          {type && <span className={`badge ${type.includes('V') ? 'v' : ''} ${type.includes('D') ? 'd' : ''} ${type.includes('P') ? 'p' : ''} ${type.includes('E') ? 'e' : ''}`}>{type}</span>}
                         </td>
                       );
                     })}
@@ -506,11 +520,11 @@ function App() {
               </div>
               
               <div className="calendar-input-grid">
-                <label style={{ gridColumn: '1 / -1' }}>Anbaukalender (V=Voranzucht, P=Aussaat Freiland / Pflanzung)</label>
+                <label style={{ gridColumn: '1 / -1' }}>Anbaukalender (V=Voranzucht, D=Direktsaat, P=Pflanzung)</label>
                 {months.map(m => (
                   <div key={m} className="month-input">
                     <span>{m}</span>
-                    <input name={`month-${m}`} defaultValue={seedToEdit?.calendar[m] || ''} placeholder="V/P" maxLength={3} />
+                    <input name={`month-${m}`} defaultValue={seedToEdit?.calendar[m] || ''} placeholder="V/D/P" maxLength={5} />
                   </div>
                 ))}
               </div>
@@ -561,6 +575,10 @@ function App() {
             <div className="instructions">
               <h4>Anbauhinweise</h4>
               <p>{selectedSeed.instructions}</p>
+              <div className="variety-hint">
+                <Info size={12} />
+                <span>Hinweis: Anbauzeiträume können je nach Sorte variieren.</span>
+              </div>
             </div>
 
             <div className="companion-planting">

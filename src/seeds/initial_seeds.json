@@ -12,7 +12,7 @@
     "name": "Radieschen 'French Breakfast'",
     "category": "Radieschen",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Feb": "P", "Mär": "P", "Apr": "P", "Mai": "P/E", "Jun": "P/E", "Jul": "P/E", "Aug": "P/E", "Sep": "P/E", "Okt": "E" },
+    "calendar": { "Feb": "D", "Mär": "D", "Apr": "D", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "D/E", "Sep": "D/E", "Okt": "E" },
     "instructions": "Schnellwüchsig (halblang mit weißer Spitze). Gleichmäßige Wasserversorgung wichtig gegen Schärfe/Holzigkeit.",
     "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln", "Kohlrabi", "Kopfsalat", "Kresse", "Mangold", "Möhren", "Spinat", "Tomaten"],
     "badNeighbors": ["Gurken"]
@@ -21,7 +21,7 @@
     "name": "Radieschen 'Trio'",
     "category": "Radieschen",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Feb": "P", "Mär": "P", "Apr": "P", "Mai": "P/E", "Jun": "P/E", "Jul": "P/E", "Aug": "P/E", "Sep": "P/E", "Okt": "E" },
+    "calendar": { "Feb": "D", "Mär": "D", "Apr": "D", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "D/E", "Sep": "D/E", "Okt": "E" },
     "instructions": "Mischung aus Rudi (rot), Eiszapfen (weiß) und French Breakfast (rot-weiß).",
     "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln", "Kohlrabi", "Kopfsalat", "Kresse", "Mangold", "Möhren", "Spinat", "Tomaten"],
     "badNeighbors": ["Gurken"]
@@ -57,7 +57,7 @@
     "name": "Koriander 'Konrad'",
     "category": "Kräuter",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "P", "Apr": "P", "Mai": "P", "Jun": "E", "Jul": "P/E", "Aug": "P/E", "Sep": "E" },
+    "calendar": { "Mär": "D", "Apr": "D", "Mai": "D", "Jun": "E", "Jul": "D/E", "Aug": "D/E", "Sep": "E" },
     "instructions": "Sonnig. Nicht frisch düngen (beugt Blattläusen vor). Spät schießend.",
     "goodNeighbors": ["Gurken", "Kohlarten", "Rote Bete"],
     "badNeighbors": []
@@ -66,7 +66,7 @@
     "name": "Dicke Bohne 'Ratio'",
     "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "P", "Apr": "P", "Jun": "E", "Jul": "E", "Aug": "E" },
+    "calendar": { "Mär": "D", "Apr": "D", "Jun": "E", "Jul": "E", "Aug": "E" },
     "instructions": "Saattiefe 5-8 cm. Sonnig bis halbschattig. Sehr frühreife Sorte.",
     "goodNeighbors": ["Kartoffeln", "Bohnenkraut", "Erdbeeren", "Gurken", "Kohlarten", "Kohlrabi", "Kopfsalat", "Pflücksalat", "Rote Bete", "Sellerie", "Tomaten"],
     "badNeighbors": ["Erbsen", "Fenchel", "Knoblauch", "Lauch", "Zwiebeln"]
@@ -75,7 +75,7 @@
     "name": "Zuckererbse 'Ambrosia'",
     "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "P", "Apr": "P", "Mai": "P", "Jun": "E", "Jul": "E", "Aug": "E" },
+    "calendar": { "Mär": "D", "Apr": "D", "Mai": "D", "Jun": "E", "Jul": "E", "Aug": "E" },
     "instructions": "Saattiefe 3-5 cm. Sonnig, Kaiserschote (Hülsen komplett essbar).",
     "goodNeighbors": ["Dill", "Fenchel", "Gurken", "Kohlarten", "Kohlrabi", "Kopfsalat", "Mais", "Möhren", "Radieschen", "Zucchini"],
     "badNeighbors": ["Bohnen", "Kartoffeln", "Knoblauch", "Lauch", "Tomaten", "Zwiebeln"]
@@ -84,7 +84,7 @@
     "name": "Petersilie 'Glatte'",
     "category": "Kräuter",
     "nutrientConsumption": "Mittelzehrer",
-    "calendar": { "Mär": "P/E", "Apr": "P/E", "Mai": "P/E", "Jun": "P/E", "Jul": "P/E", "Aug": "E", "Sep": "E", "Okt": "E", "Nov": "E" },
+    "calendar": { "Mär": "D/E", "Apr": "D/E", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "E", "Sep": "E", "Okt": "E", "Nov": "E" },
     "instructions": "Keimdauer ca. 3 Wochen (stets feucht halten). Sonnig bis halbschattig.",
     "goodNeighbors": ["Tomaten", "Spargel", "Radieschen"],
     "badNeighbors": ["Kopfsalat", "Fenchel"]
@@ -138,7 +138,7 @@
     "name": "Grünkohl 'Lerchenzungen'",
     "category": "Gemüse",
     "nutrientConsumption": "Starkzehrer",
-    "calendar": { "Mai": "P", "Jun": "P", "Okt": "E", "Nov": "E", "Dez": "E", "Jan": "E" },
+    "calendar": { "Mai": "D", "Jun": "D", "Okt": "E", "Nov": "E", "Dez": "E", "Jan": "E" },
     "instructions": "Sonnig/halbschattig. Sehr frosthart. Aroma verbessert sich nach Frost.",
     "goodNeighbors": ["Bohnen", "Dill", "Endivien", "Erbsen", "Kamille", "Kartoffeln", "Kopfsalat", "Koriander", "Kümmel", "Lauch", "Mangold", "Pfefferminze", "Pflücksalat", "Rote Bete", "Sellerie", "Spinat", "Tagetes"],
     "badNeighbors": ["Erdbeeren", "Senf", "Knoblauch", "Zwiebeln"]

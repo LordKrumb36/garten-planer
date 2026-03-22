@@ -473,6 +473,7 @@ tr:hover {
 
 .badge.v { background-color: #e6fffa; color: #2c7a7b; }
 .badge.d { background-color: #f0fff4; color: #2f855a; }
+.badge.p { background-color: #ebf8ff; color: #2c5282; }
 .badge.e { background-color: #feebc8; color: #9c4221; }
 
 /* Beds Section */
@@ -1058,4 +1059,68 @@ tr:hover {
   font-weight: bold;
   font-size: 0.9rem;
   color: #2d3748;
+}
+
+/* Info Banner Styles */
+.info-banner {
+  background-color: #f0f7ff;
+  border-left: 4px solid #007bff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 4px;
+  color: #004085;
+}
+
+.info-banner-icon {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.info-banner-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.info-banner-text strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.variety-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  padding: 0.5rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Calendar Legend Styles */
+.calendar-legend {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-item .badge {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
