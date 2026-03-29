@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Asia Salat Wasabino",
+    "category": "Salat",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Lockerer, humoser Boden, stets feucht halten. Saattiefe 1-2 cm. Sehr frosthart bis -10 °C und schossfest. Kräftiges Wasabi-Aroma. Ernte als Baby-Leaf nach 3 Wochen oder als ausgewachsene Rosette möglich.",
+    "calendar": {
+      "Feb": "V/D",
+      "Mär": "V/D/P",
+      "Apr": "V/D/P/E",
+      "Mai": "E",
+      "Jun": "E",
+      "Jul": "V/E",
+      "Aug": "V/D/E",
+      "Sep": "V/D/P/E",
+      "Okt": "P/E",
+      "Nov": "E",
+      "Dez": "E"
+    },
+    "goodNeighbors": ["Möhren", "Pastinaken", "Rote Bete", "Erbsen", "Buschbohnen", "Salate", "Spinat", "Tomaten", "Dill", "Ringelblumen"],
+    "badNeighbors": ["Kohlarten", "Radieschen", "Rettich", "Senf"]
+  }
+]

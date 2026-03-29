@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Wirsing Dunkelgrüner Putjes",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Schwerer, nährstoffreicher Boden. Saattiefe 1-2 cm. Traditionssorte, sehr frostfest. Kann über Winter im Beet bleiben. Erde anhäufeln fördert die Standfestigkeit.",
+    "calendar": {
+      "Mai": "V",
+      "Jun": "V/P",
+      "Jul": "P",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E",
+      "Jan": "E"
+    },
+    "goodNeighbors": ["Sellerie", "Kartoffeln", "Erbsen", "Buschbohnen", "Salate", "Spinat", "Tomaten", "Endivien", "Dill", "Pfefferminze"],
+    "badNeighbors": ["Andere Kohlarten", "Erdbeeren", "Zwiebeln", "Knoblauch", "Lauch"]
+  }
+]

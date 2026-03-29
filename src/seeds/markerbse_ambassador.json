@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Markerbse Ambassador",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig und luftig. Lockerer Boden. Saattiefe 3-5 cm. Benötigt Rankhilfe (ca. 70 cm). Resistent gegen Mehltau und Fusarium. Anbaupause 3-5 Jahre einhalten. Ernte regelmäßig fördert Nachwuchs.",
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D",
+      "Jun": "D/E",
+      "Jul": "E",
+      "Aug": "E"
+    },
+    "goodNeighbors": ["Möhren", "Salate", "Radieschen", "Gurken", "Dill", "Fenchel", "Mais", "Kohlrabi"],
+    "badNeighbors": ["Buschbohnen", "Stangenbohnen", "Zwiebeln", "Knoblauch", "Lauch", "Tomaten", "Kartoffeln"]
+  }
+]

@@ -3,144 +3,504 @@
     "name": "Kohlrabi 'Azur Star'",
     "category": "Gemüse",
     "nutrientConsumption": "Mittelzehrer",
-    "calendar": { "Jan": "V", "Feb": "V/P", "Mär": "V/P", "Apr": "V/P", "Mai": "V/P", "Jun": "V/P/E", "Jul": "V/P/E", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "calendar": {
+      "Jan": "V",
+      "Feb": "V/P",
+      "Mär": "V/P",
+      "Apr": "V/P",
+      "Mai": "V/P",
+      "Jun": "V/P/E",
+      "Jul": "V/P/E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
     "instructions": "Sonnig bis halbschattig. Gleichmäßig feucht halten (beugt Platzen vor). Nicht zu tief pflanzen.",
-    "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln"],
-    "badNeighbors": []
+    "goodNeighbors": [
+      "Bohnen",
+      "Erbsen",
+      "Kartoffeln"
+    ],
+    "badNeighbors": [],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Radieschen 'French Breakfast'",
-    "category": "Radieschen",
+    "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Feb": "D", "Mär": "D", "Apr": "D", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "D/E", "Sep": "D/E", "Okt": "E" },
+    "calendar": {
+      "Feb": "D",
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E"
+    },
     "instructions": "Schnellwüchsig (halblang mit weißer Spitze). Gleichmäßige Wasserversorgung wichtig gegen Schärfe/Holzigkeit.",
-    "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln", "Kohlrabi", "Kopfsalat", "Kresse", "Mangold", "Möhren", "Spinat", "Tomaten"],
-    "badNeighbors": ["Gurken"]
+    "goodNeighbors": [
+      "Bohnen",
+      "Erbsen",
+      "Kartoffeln",
+      "Kohlrabi",
+      "Kopfsalat",
+      "Kresse",
+      "Mangold",
+      "Möhren",
+      "Spinat",
+      "Tomaten"
+    ],
+    "badNeighbors": [
+      "Gurken"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Radieschen 'Trio'",
-    "category": "Radieschen",
+    "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Feb": "D", "Mär": "D", "Apr": "D", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "D/E", "Sep": "D/E", "Okt": "E" },
+    "calendar": {
+      "Feb": "D",
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E"
+    },
     "instructions": "Mischung aus Rudi (rot), Eiszapfen (weiß) und French Breakfast (rot-weiß).",
-    "goodNeighbors": ["Bohnen", "Erbsen", "Kartoffeln", "Kohlrabi", "Kopfsalat", "Kresse", "Mangold", "Möhren", "Spinat", "Tomaten"],
-    "badNeighbors": ["Gurken"]
+    "goodNeighbors": [
+      "Bohnen",
+      "Erbsen",
+      "Kartoffeln",
+      "Kohlrabi",
+      "Kopfsalat",
+      "Kresse",
+      "Mangold",
+      "Möhren",
+      "Spinat",
+      "Tomaten"
+    ],
+    "badNeighbors": [
+      "Gurken"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Dost / Wilder Majoran",
     "category": "Kräuter",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Feb": "V", "Mär": "V", "Apr": "P/E", "Mai": "P/E", "Jun": "E", "Jul": "E", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "calendar": {
+      "Feb": "V",
+      "Mär": "V",
+      "Apr": "P/E",
+      "Mai": "P/E",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
     "instructions": "Lichtkeimer. Vollsonnig, eher magerer und trockener Boden. Mehrjährig.",
-    "goodNeighbors": ["Basilikum", "Bohnenkraut", "Rosmarin", "Salbei", "Thymian", "Schnittlauch", "Pfefferminze", "Zwiebeln", "Knoblauch", "Tomaten", "Möhren", "Gurken", "Zucchini", "Radieschen", "Erbsen", "Bohnen"],
-    "badNeighbors": ["Wermut"]
+    "goodNeighbors": [
+      "Basilikum",
+      "Bohnenkraut",
+      "Rosmarin",
+      "Salbei",
+      "Thymian",
+      "Schnittlauch",
+      "Pfefferminze",
+      "Zwiebeln",
+      "Knoblauch",
+      "Tomaten",
+      "Möhren",
+      "Gurken",
+      "Zucchini",
+      "Radieschen",
+      "Erbsen",
+      "Bohnen"
+    ],
+    "badNeighbors": [
+      "Wermut"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Artischocke 'Green Globe'",
     "category": "Blumen",
     "nutrientConsumption": "Starkzehrer",
-    "calendar": { "Feb": "V", "Mär": "V", "Apr": "V", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "calendar": {
+      "Feb": "V",
+      "Mär": "V",
+      "Apr": "V",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
     "instructions": "Samen 2-3h vorquellen. Sehr platzbedürftig. Überwinterung mit Frostschutz möglich.",
-    "goodNeighbors": ["Salat", "Fenchel", "Kohlarten", "Spinat", "Radieschen", "Salbei", "Thymian", "Ringelblumen"],
-    "badNeighbors": ["Sellerie", "Zwiebeln", "Knoblauch", "Schnittlauch", "Schwarzwurzeln", "Topinambur", "Chicorée"]
+    "goodNeighbors": [
+      "Salat",
+      "Fenchel",
+      "Kohlarten",
+      "Spinat",
+      "Radieschen",
+      "Salbei",
+      "Thymian",
+      "Ringelblumen"
+    ],
+    "badNeighbors": [
+      "Sellerie",
+      "Zwiebeln",
+      "Knoblauch",
+      "Schnittlauch",
+      "Schwarzwurzeln",
+      "Topinambur",
+      "Chicorée"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Knollenfenchel 'Fenno'",
     "category": "Gemüse",
     "nutrientConsumption": "Mittelzehrer",
-    "calendar": { "Jan": "V", "Feb": "V", "Mär": "V/P", "Mai": "E", "Jun": "V/E", "Jul": "V/P", "Aug": "P", "Sep": "E", "Okt": "E" },
+    "calendar": {
+      "Jan": "V",
+      "Feb": "V",
+      "Mär": "V/P",
+      "Mai": "E",
+      "Jun": "V/E",
+      "Jul": "V/P",
+      "Aug": "P",
+      "Sep": "E",
+      "Okt": "E"
+    },
     "instructions": "Sonnig, humos, feucht. Keimtemperatur 20-22 °C. Schossfest. Jungpflanzen nicht zu tief setzen (Knolle muss oberhalb des Bodens sitzen).",
-    "goodNeighbors": ["Endivien", "Erbsen", "Feldsalat", "Gurken", "Kopfsalat", "Pflücksalat", "Salbei", "Zuckerhut", "Chicorée", "Radicchio"],
-    "badNeighbors": ["Dill", "Bohnen", "Kümmel", "Tomaten"]
+    "goodNeighbors": [
+      "Endivien",
+      "Erbsen",
+      "Feldsalat",
+      "Gurken",
+      "Kopfsalat",
+      "Pflücksalat",
+      "Salbei",
+      "Zuckerhut",
+      "Chicorée",
+      "Radicchio"
+    ],
+    "badNeighbors": [
+      "Dill",
+      "Bohnen",
+      "Kümmel",
+      "Tomaten"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Koriander 'Konrad'",
     "category": "Kräuter",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "D", "Apr": "D", "Mai": "D", "Jun": "E", "Jul": "D/E", "Aug": "D/E", "Sep": "E" },
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D",
+      "Jun": "E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "E"
+    },
     "instructions": "Sonnig. Nicht frisch düngen (beugt Blattläusen vor). Spät schießend.",
-    "goodNeighbors": ["Gurken", "Kohlarten", "Rote Bete"],
-    "badNeighbors": []
+    "goodNeighbors": [
+      "Gurken",
+      "Kohlarten",
+      "Rote Bete"
+    ],
+    "badNeighbors": [],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Dicke Bohne 'Ratio'",
     "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "D", "Apr": "D", "Jun": "E", "Jul": "E", "Aug": "E" },
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E"
+    },
     "instructions": "Saattiefe 5-8 cm. Sonnig bis halbschattig. Sehr frühreife Sorte.",
-    "goodNeighbors": ["Kartoffeln", "Bohnenkraut", "Erdbeeren", "Gurken", "Kohlarten", "Kohlrabi", "Kopfsalat", "Pflücksalat", "Rote Bete", "Sellerie", "Tomaten"],
-    "badNeighbors": ["Erbsen", "Fenchel", "Knoblauch", "Lauch", "Zwiebeln"]
+    "goodNeighbors": [
+      "Kartoffeln",
+      "Bohnenkraut",
+      "Erdbeeren",
+      "Gurken",
+      "Kohlarten",
+      "Kohlrabi",
+      "Kopfsalat",
+      "Pflücksalat",
+      "Rote Bete",
+      "Sellerie",
+      "Tomaten"
+    ],
+    "badNeighbors": [
+      "Erbsen",
+      "Fenchel",
+      "Knoblauch",
+      "Lauch",
+      "Zwiebeln"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Zuckererbse 'Ambrosia'",
     "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "D", "Apr": "D", "Mai": "D", "Jun": "E", "Jul": "E", "Aug": "E" },
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E"
+    },
     "instructions": "Saattiefe 3-5 cm. Sonnig, Kaiserschote (Hülsen komplett essbar).",
-    "goodNeighbors": ["Dill", "Fenchel", "Gurken", "Kohlarten", "Kohlrabi", "Kopfsalat", "Mais", "Möhren", "Radieschen", "Zucchini"],
-    "badNeighbors": ["Bohnen", "Kartoffeln", "Knoblauch", "Lauch", "Tomaten", "Zwiebeln"]
+    "goodNeighbors": [
+      "Dill",
+      "Fenchel",
+      "Gurken",
+      "Kohlarten",
+      "Kohlrabi",
+      "Kopfsalat",
+      "Mais",
+      "Möhren",
+      "Radieschen",
+      "Zucchini"
+    ],
+    "badNeighbors": [
+      "Bohnen",
+      "Kartoffeln",
+      "Knoblauch",
+      "Lauch",
+      "Tomaten",
+      "Zwiebeln"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Petersilie 'Glatte'",
     "category": "Kräuter",
     "nutrientConsumption": "Mittelzehrer",
-    "calendar": { "Mär": "D/E", "Apr": "D/E", "Mai": "D/E", "Jun": "D/E", "Jul": "D/E", "Aug": "E", "Sep": "E", "Okt": "E", "Nov": "E" },
+    "calendar": {
+      "Mär": "D/E",
+      "Apr": "D/E",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E",
+      "Nov": "E"
+    },
     "instructions": "Keimdauer ca. 3 Wochen (stets feucht halten). Sonnig bis halbschattig.",
-    "goodNeighbors": ["Tomaten", "Spargel", "Radieschen"],
-    "badNeighbors": ["Kopfsalat", "Fenchel"]
+    "goodNeighbors": [
+      "Tomaten",
+      "Spargel",
+      "Radieschen"
+    ],
+    "badNeighbors": [
+      "Kopfsalat",
+      "Fenchel"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Türk. Drachenkopf",
     "category": "Blumen",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "V", "Apr": "V/P", "Mai": "V/P", "Jun": "P/E", "Jul": "E", "Aug": "E", "Sep": "E" },
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V/P",
+      "Mai": "V/P",
+      "Jun": "P/E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E"
+    },
     "instructions": "Lichtkeimer. Sonnig. Hervorragende Bienenweide, intensiv zitroniger Duft.",
-    "goodNeighbors": ["Tomaten", "Gurken", "Kapuzinerkresse", "Ringelblumen", "Rosen"],
-    "badNeighbors": []
+    "goodNeighbors": [
+      "Tomaten",
+      "Gurken",
+      "Kapuzinerkresse",
+      "Ringelblumen",
+      "Rosen"
+    ],
+    "badNeighbors": [],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Vergissmeinnicht (Chin.)",
     "category": "Blumen",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Mär": "V", "Apr": "V/P/E", "Mai": "V/P/E", "Jun": "P/E" },
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V/P/E",
+      "Mai": "V/P/E",
+      "Jun": "P/E"
+    },
     "instructions": "Dunkelkeimer. Sonnig bis halbschattig. Trockenheitsverträglich.",
-    "goodNeighbors": ["Tulpen", "Narzissen", "Hyazinthen", "Farne", "Funkien", "Tränendes Herz", "Primeln", "Obstbäume", "Beerensträucher", "Salat", "Erdbeeren"],
-    "badNeighbors": ["Lavendel", "Thymian"]
+    "goodNeighbors": [
+      "Tulpen",
+      "Narzissen",
+      "Hyazinthen",
+      "Farne",
+      "Funkien",
+      "Tränendes Herz",
+      "Primeln",
+      "Obstbäume",
+      "Beerensträucher",
+      "Salat",
+      "Erdbeeren"
+    ],
+    "badNeighbors": [
+      "Lavendel",
+      "Thymian"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Muskatellersalbei",
     "category": "Blumen",
     "nutrientConsumption": "Mittelzehrer",
-    "calendar": { "Mär": "V", "Apr": "V/P", "Mai": "V/P", "Jun": "V/P/E", "Jul": "E", "Aug": "E", "Sep": "E" },
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V/P",
+      "Mai": "V/P",
+      "Jun": "V/P/E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E"
+    },
     "instructions": "Zweijährig. Imposante Höhe. Sonnig, durchlässiger Boden.",
-    "goodNeighbors": ["Fenchel", "Möhren", "Zwiebeln", "Kohlarten"],
-    "badNeighbors": []
+    "goodNeighbors": [
+      "Fenchel",
+      "Möhren",
+      "Zwiebeln",
+      "Kohlarten"
+    ],
+    "badNeighbors": [],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Edamame 'Hokkai Green'",
     "category": "Gemüse",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Apr": "V", "Mai": "P", "Jun": "P", "Jul": "E", "Aug": "E", "Sep": "E" },
+    "calendar": {
+      "Apr": "V",
+      "Mai": "P",
+      "Jun": "P",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E"
+    },
     "instructions": "Braucht viel Wärme. Ernte, wenn Hülsen prall and hellgrün sind.",
-    "goodNeighbors": ["Bohnenkraut", "Erdbeeren", "Gurken", "Kartoffeln", "Kohlarten", "Kohlrabi", "Kopfsalat", "Pflücksalat", "Rote Bete", "Sellerie", "Tomaten"],
-    "badNeighbors": ["Erbsen", "Fenchel", "Knoblauch", "Lauch", "Zwiebeln"]
+    "goodNeighbors": [
+      "Bohnenkraut",
+      "Erdbeeren",
+      "Gurken",
+      "Kartoffeln",
+      "Kohlarten",
+      "Kohlrabi",
+      "Kopfsalat",
+      "Pflücksalat",
+      "Rote Bete",
+      "Sellerie",
+      "Tomaten"
+    ],
+    "badNeighbors": [
+      "Erbsen",
+      "Fenchel",
+      "Knoblauch",
+      "Lauch",
+      "Zwiebeln"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Anis-Ysop",
     "category": "Kräuter",
     "nutrientConsumption": "Schwachzehrer",
-    "calendar": { "Apr": "V/E", "Mai": "P/E", "Jun": "P/E", "Jul": "E", "Aug": "E", "Sep": "E", "Okt": "E" },
+    "calendar": {
+      "Apr": "V/E",
+      "Mai": "P/E",
+      "Jun": "P/E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
     "instructions": "Lichtkeimer. Sonnig bis halbschattig. Mehrjährig.",
-    "goodNeighbors": ["Echinacea", "Gaura", "Coreopsis", "Achillea", "Astern", "Lavendel", "Salbei", "Thymian", "Rosmarin", "Ziergräser", "Kohlarten", "Salat"],
-    "badNeighbors": ["Kürbis", "Zucchini"]
+    "goodNeighbors": [
+      "Echinacea",
+      "Gaura",
+      "Coreopsis",
+      "Achillea",
+      "Astern",
+      "Lavendel",
+      "Salbei",
+      "Thymian",
+      "Rosmarin",
+      "Ziergräser",
+      "Kohlarten",
+      "Salat"
+    ],
+    "badNeighbors": [
+      "Kürbis",
+      "Zucchini"
+    ],
+    "origin": "Bingenheimer Saatgut"
   },
   {
     "name": "Grünkohl 'Lerchenzungen'",
     "category": "Gemüse",
     "nutrientConsumption": "Starkzehrer",
-    "calendar": { "Mai": "D", "Jun": "D", "Okt": "E", "Nov": "E", "Dez": "E", "Jan": "E" },
+    "calendar": {
+      "Mai": "D",
+      "Jun": "D",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E",
+      "Jan": "E"
+    },
     "instructions": "Sonnig/halbschattig. Sehr frosthart. Aroma verbessert sich nach Frost.",
-    "goodNeighbors": ["Bohnen", "Dill", "Endivien", "Erbsen", "Kamille", "Kartoffeln", "Kopfsalat", "Koriander", "Kümmel", "Lauch", "Mangold", "Pfefferminze", "Pflücksalat", "Rote Bete", "Sellerie", "Spinat", "Tagetes"],
-    "badNeighbors": ["Erdbeeren", "Senf", "Knoblauch", "Zwiebeln"]
+    "goodNeighbors": [
+      "Bohnen",
+      "Dill",
+      "Endivien",
+      "Erbsen",
+      "Kamille",
+      "Kartoffeln",
+      "Kopfsalat",
+      "Koriander",
+      "Kümmel",
+      "Lauch",
+      "Mangold",
+      "Pfefferminze",
+      "Pflücksalat",
+      "Rote Bete",
+      "Sellerie",
+      "Spinat",
+      "Tagetes"
+    ],
+    "badNeighbors": [
+      "Erdbeeren",
+      "Senf",
+      "Knoblauch",
+      "Zwiebeln"
+    ],
+    "origin": "Bingenheimer Saatgut"
   }
 ]

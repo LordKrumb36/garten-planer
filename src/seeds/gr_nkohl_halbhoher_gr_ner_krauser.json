@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Grünkohl Halbhoher grüner Krauser",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Tiefgründiger, nährstoffreicher Boden. Saattiefe 1-2 cm. Frost verbessert den Geschmack. Schutznetz gegen Kohlweißling empfohlen. Anbaupause zu anderen Kreuzblütlern (3-4 Jahre) einhalten.",
+    "calendar": {
+      "Mai": "V",
+      "Jun": "V/D/P",
+      "Jul": "D/P",
+      "Aug": "P",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E",
+      "Jan": "E",
+      "Feb": "E"
+    },
+    "goodNeighbors": ["Tomaten", "Buschbohnen", "Erbsen", "Salate", "Spinat", "Dill", "Rosmarin", "Salbei", "Minze", "Radieschen", "Gurken"],
+    "badNeighbors": ["Andere Kohlarten", "Kartoffeln", "Zwiebeln", "Knoblauch"]
+  }
+]

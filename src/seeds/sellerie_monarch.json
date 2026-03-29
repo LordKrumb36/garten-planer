@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Sellerie Monarch",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Nährstoffreicher, feuchter Boden. Lichtkeimer (nur leicht andrücken). Voranzucht warm (ca. 20 °C), Jungpflanzen beim Auspflanzen nicht zu tief setzen (Herz darf nicht mit Erde bedeckt sein).",
+    "calendar": {
+      "Feb": "V",
+      "Mär": "V",
+      "Apr": "V",
+      "Mai": "P",
+      "Jun": "P",
+      "Sep": "E",
+      "Okt": "E",
+      "Nov": "E"
+    },
+    "goodNeighbors": ["Kohlarten", "Lauch", "Buschbohnen", "Spinat", "Tomaten", "Kohlrabi", "Gurken"],
+    "badNeighbors": ["Pastinaken", "Kartoffeln", "Kopfsalat", "Mais"]
+  }
+]

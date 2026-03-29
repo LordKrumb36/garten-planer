@@ -1,9 +1,9 @@
 [
   {
-    "name": "idemar Rosenkohl",
-    "origin": "Bingenheimer Saatgut",
+    "name": "Rosenkohl Idemar (Bingenheimer)",
     "category": "Gemüse",
     "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
     "instructions": "Sonnig bis halbschattig. Starkzehrer: Schwere, nährstoffreiche und kalkhaltige Böden bevorzugt. Aussaat im Haus/Frühbeet ab März, Freiland ab April. Auspflanzen ab Mai. Ernte ab September/Oktober bis Dezember (Frost verbessert Aroma). Erde anhäufeln fördert Standfestigkeit.",
     "calendar": {
       "Mär": "V",
@@ -13,7 +13,7 @@
       "Nov": "E",
       "Dez": "E"
     },
-    "goodNeighbors": ["Kartoffeln", "Sellerie", "Erbsen", "Bohnen", "Salate", "Spinat", "Tomaten", "Salbei", "Rosmarin", "Minze"],
+    "goodNeighbors": ["Kartoffeln", "Sellerie", "Erbsen", "Buschbohnen", "Salate", "Spinat", "Tomaten", "Salbei", "Rosmarin", "Minze"],
     "badNeighbors": ["Andere Kohlarten", "Zwiebeln", "Knoblauch", "Lauch", "Erdbeeren"]
   }
 ]

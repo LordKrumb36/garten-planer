@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Asia-Salat Mischung",
+    "category": "Salat",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Lockerer, humoser Boden, stets feucht halten. Saattiefe 1-2 cm. Kältetolerant bis -10 °C. Schutz vor Erdflöhen durch Vlies oder Feuchtigkeit. Kreuzblütler: Anbaupause von 3-4 Jahren einhalten. Ernte: Blätter einzeln pflücken oder schneiden, Herz für Nachwuchs stehen lassen (3-5 Ernten möglich).",
+    "calendar": {
+      "Feb": "D",
+      "Mär": "D",
+      "Apr": "D/E",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E"
+    },
+    "goodNeighbors": ["Erbsen", "Buschbohnen", "Möhren", "Rote Bete", "Pastinaken", "Salate", "Spinat", "Mangold", "Dill", "Kerbel", "Tagetes"],
+    "badNeighbors": ["Kohlarten", "Radieschen", "Rettich", "Rucola", "Senf"]
+  }
+]

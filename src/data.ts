@@ -2,7 +2,8 @@ export const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 
 
 export interface SeedData {
   name: string;
-  category: 'Kräuter' | 'Gemüse' | 'Radieschen' | 'Blumen';
+  category: 'Kräuter' | 'Gemüse' | 'Salat' | 'Blumen';
+  origin?: string;
   calendar: Record<string, string>;
   instructions: string;
   nutrientConsumption?: 'Starkzehrer' | 'Mittelzehrer' | 'Schwachzehrer';

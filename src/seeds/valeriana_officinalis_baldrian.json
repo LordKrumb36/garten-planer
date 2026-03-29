@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Valeriana officinalis Baldrian",
+    "category": "Kräuter",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Bevorzugt feuchte, humose Böden. Lichtkeimer (Samen nicht mit Erde bedecken, nur andrücken). Mehrjährig. Wurzeln werden im Herbst des zweiten Jahres geerntet. Blüten locken viele Nützlinge an.",
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V/D",
+      "Mai": "D/P",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Möhren", "Zwiebeln", "Lauch", "Pastinaken", "Feldsalat", "Spinat"],
+    "badNeighbors": ["Wermut"]
+  }
+]

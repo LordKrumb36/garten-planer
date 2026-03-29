@@ -209,6 +209,7 @@ function App() {
     const newSeed: SeedData = {
       name: formData.get('name') as string,
       category: (formData.get('category') as any) || 'Gemüse',
+      origin: formData.get('origin') as string || 'Bingenheimer Saatgut',
       instructions: formData.get('instructions') as string || '',
       calendar: {},
       goodNeighbors: (formData.get('goodNeighbors') as string).split(',').map(s => s.trim()).filter(s => s),
@@ -499,9 +500,13 @@ function App() {
                   <select name="category" defaultValue={seedToEdit?.category || 'Gemüse'}>
                     <option value="Gemüse">Gemüse</option>
                     <option value="Kräuter">Kräuter</option>
-                    <option value="Radieschen">Radieschen</option>
+                    <option value="Salat">Salat</option>
                     <option value="Blumen">Blumen</option>
                   </select>
+                </div>
+                <div className="form-group">
+                  <label>Herkunft/Ursprung</label>
+                  <input name="origin" defaultValue={seedToEdit?.origin || 'Bingenheimer Saatgut'} placeholder="z.B. Bingenheimer Saatgut" />
                 </div>
               </div>
               <div className="form-group">
@@ -565,6 +570,9 @@ function App() {
             </div>
             <div className="tags-row">
               <span className="category-tag">{selectedSeed.category}</span>
+              {selectedSeed.origin && (
+                <span className="origin-tag">{selectedSeed.origin}</span>
+              )}
               {selectedSeed.nutrientConsumption && (
                 <span className={`nutrient-badge ${selectedSeed.nutrientConsumption.toLowerCase()}`}>
                   {selectedSeed.nutrientConsumption}

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Kohlrabi Blaro",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Blauviolette, schossfeste Sorte. Gleichmäßige Wasserversorgung wichtig gegen Verholzen und Platzen. Nicht zu tief pflanzen (Knolle muss oberhalb sitzen). Saattiefe 1 cm.",
+    "calendar": {
+      "Jan": "V",
+      "Feb": "V",
+      "Mär": "V/P",
+      "Apr": "V/D/P",
+      "Mai": "V/D/P/E",
+      "Jun": "V/D/P/E",
+      "Jul": "P/E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Salate", "Buschbohnen", "Erbsen", "Lauch", "Zwiebeln", "Dill", "Bohnenkraut", "Salbei", "Radieschen", "Sellerie", "Rote Bete", "Spinat"],
+    "badNeighbors": ["Andere Kohlarten", "Erdbeeren", "Knoblauch"]
+  }
+]

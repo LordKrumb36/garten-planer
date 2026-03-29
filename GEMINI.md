@@ -1,8 +1,8 @@
 The Garten-Planer app is a specialized tool for managing garden beds and seed data, featuring a React-based frontend and an automated research workflow.
 
 ## Application Workflow
-1.  **Seed Management:** Individual seeds are stored in `src/seeds/` as JSON files. These are dynamically aggregated by `src/data.ts` using `import.meta.glob`.
-2.  **Bed Planning:** Beds are configured in `beds_data.json` and persisted in `localStorage`.
+1.  **Seed Management:** Individual seeds are stored in `src/seeds/` as JSON files. These are dynamically aggregated by `src/data.ts`. Data includes `name`, `category` (Gemüse, Kräuter, Salat, Blumen), `origin` (e.g., Bingenheimer), `instructions`, and companion planting info.
+2.  **Bed Planning:** Beds are configured in `beds_data.json` and persisted in `localStorage`. The UI allows real-time companion planting checks based on the seed data.
 3.  **UI/UX:** The React frontend (Vite) provides a seasonal calendar and companion planting visualization.
 4.  **Calendar Logic:**
     - **V**: Voranzucht (Indoor/Greenhouse)
@@ -11,7 +11,7 @@ The Garten-Planer app is a specialized tool for managing garden beds and seed da
     - **E**: Ernte (Harvest)
 5.  **Resources:** The UI provides direct access to the official Bingenheimer seed calendar and companion planting guides (`Mischkulturen.pdf`).
 6.  **Automatic Research:** `watcher.js` identifies seeds with missing `instructions` and logs them to `pending_research.log`.
-7.  **Agent Mandate:** Gemini CLI scans for "pending" seeds, performs research (via `gartentipp313.pdf` & web search), and updates the JSON files.
+7.  **Agent Mandate:** Gemini CLI scans for "pending" seeds, performs research (via `gartentipp313.pdf` & web search), and updates the JSON files with `instructions`, `goodNeighbors`, `badNeighbors`, and `origin`. **If `origin` is specified, it MUST be included in the web search query for higher precision.** Otherwise, a general search is performed.
 
 ## Main Commands
 
