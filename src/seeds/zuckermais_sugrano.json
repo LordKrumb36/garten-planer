@@ -2,10 +2,18 @@
   {
     "name": "Zuckermais Sugrano",
     "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
     "origin": "Bingenheimer Saatgut",
-    "instructions": "",
-    "calendar": {},
-    "goodNeighbors": [],
-    "badNeighbors": []
+    "instructions": "Sonnig und warm. Nährstoffreicher Boden. Voranzucht ab Mitte April empfohlen (Vogelschutz). Auspflanzen nach den Eisheiligen. Blockpflanzung (z.B. 3x3) verbessert die Bestäubung gegenüber langen Reihen. Reichlich gießen ab Kolbenbildung. Ernte, wenn Narbenfäden braun sind.",
+    "calendar": {
+      "Apr": "V",
+      "Mai": "V/D/P",
+      "Jun": "D/P",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Buschbohnen", "Stangenbohnen", "Erbsen", "Gurken", "Kürbis", "Zucchini", "Kartoffeln", "Salat", "Radieschen", "Dill"],
+    "badNeighbors": ["Rote Bete", "Sellerie", "Kohlarten"]
   }
 ]

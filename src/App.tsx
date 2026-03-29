@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2, Camera, Image as ImageIcon, Cloud } from 'lucide-react';
+import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2, Camera, Image as ImageIcon, Cloud, ArrowLeft, ArrowRight } from 'lucide-react';
 import { seedData as staticSeedData, months, SeedData } from './data';
 import staticBedsData from './beds_data.json';
 import './App.css';
@@ -112,6 +112,18 @@ function App() {
 
   const handleUpdateBedName = (id: string, name: string) => {
     setBeds(beds.map(b => b.id === id ? { ...b, name } : b));
+  };
+
+  const handleMoveBed = (id: string, direction: 'left' | 'right') => {
+    const index = beds.findIndex(b => b.id === id);
+    if (index === -1) return;
+    if (direction === 'left' && index === 0) return;
+    if (direction === 'right' && index === beds.length - 1) return;
+
+    const newBeds = [...beds];
+    const targetIndex = direction === 'left' ? index - 1 : index + 1;
+    [newBeds[index], newBeds[targetIndex]] = [newBeds[targetIndex], newBeds[index]];
+    setBeds(newBeds);
   };
 
   const handleAddRow = (bedId: string, seedName: string) => {
@@ -407,10 +419,28 @@ function App() {
             </button>
           </div>
           <div className="beds-grid">
-            {beds.map((bed) => (
+            {beds.map((bed, index) => (
               <div key={bed.id} className="bed-card">
                 <div className="bed-header">
                   <div className="bed-header-left">
+                    <div className="bed-move-actions">
+                      <button 
+                        className="move-bed-btn" 
+                        onClick={() => handleMoveBed(bed.id, 'left')}
+                        disabled={index === 0}
+                        title="Nach links verschieben"
+                      >
+                        <ArrowLeft size={14} />
+                      </button>
+                      <button 
+                        className="move-bed-btn" 
+                        onClick={() => handleMoveBed(bed.id, 'right')}
+                        disabled={index === beds.length - 1}
+                        title="Nach rechts verschieben"
+                      >
+                        <ArrowRight size={14} />
+                      </button>
+                    </div>
                     <input 
                       className="bed-name-input"
                       value={bed.name}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Radies Rudi",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Robuste, frühe Sorte für den ganzjährigen Anbau. Gleichmäßige Feuchtigkeit verhindert Pelzigwerden. Saattiefe 1 cm. Ernte ca. 4-5 Wochen nach Aussaat. Kulturschutzvlies gegen Erdflöhe empfohlen.",
+    "calendar": {
+      "Feb": "D",
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Bohnen", "Erbsen", "Möhren", "Salat", "Spinat", "Tomaten", "Pastinaken", "Kohlrabi"],
+    "badNeighbors": ["Andere Kohlarten", "Rettich", "Senf"]
+  }
+]

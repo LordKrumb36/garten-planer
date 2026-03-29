@@ -2,10 +2,18 @@
   {
     "name": "Möhre Soletta",
     "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
     "origin": "Bingenheimer Saatgut",
-    "instructions": "",
-    "calendar": {},
-    "goodNeighbors": [],
-    "badNeighbors": []
+    "instructions": "Sonnig. Tiefgründig lockerer Boden ohne frischen Mist. Violette Sorte, schossfester als andere farbige Sorten. Saattiefe 1,5-2,5 cm. Direktsaat erst ab Mai empfohlen. Markiersaat (z.B. Radieschen) hilft die Reihen früh zu erkennen.",
+    "calendar": {
+      "Mai": "D",
+      "Jun": "D",
+      "Jul": "D/E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Zwiebeln", "Lauch", "Dill", "Tomaten", "Radieschen", "Salat", "Erbsen", "Mangold"],
+    "badNeighbors": ["Pastinaken", "Petersilie", "Sellerie", "Rote Bete"]
   }
 ]

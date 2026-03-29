@@ -18,6 +18,15 @@
     ]
   },
   {
+    "id": "c8ba3139-de63-4b8c-88fb-2e6173fc342c",
+    "name": "Beet 5",
+    "rows": [
+      {
+        "seedName": "Radies Rudi"
+      }
+    ]
+  },
+  {
     "id": "9eec975e-8816-4ff5-a576-623754c4688d",
     "name": "Beet 2",
     "rows": [
@@ -33,21 +42,6 @@
     ]
   },
   {
-    "id": "de51a380-21fc-4603-bc81-3d18e2884cc4",
-    "name": "Beet 3",
-    "rows": [
-      {
-        "seedName": "Knollenfenchel (Bingenheimer)"
-      },
-      {
-        "seedName": "Knollenfenchel 'Fenno'"
-      }
-    ],
-    "images": [
-      "/images/IMG_20260301_154222717_HDR~2.jpg"
-    ]
-  },
-  {
     "id": "dc1f42fb-1e6e-42b0-9023-3f445a79a354",
     "name": "Beet 4",
     "rows": [
@@ -57,6 +51,33 @@
     ],
     "images": [
       "/images/IMG_20260223_161240941_HDR~2.jpg"
+    ]
+  },
+  {
+    "id": "de51a380-21fc-4603-bc81-3d18e2884cc4",
+    "name": "Beet 3",
+    "rows": [
+      {
+        "seedName": "Knollenfenchel (Bingenheimer)"
+      },
+      {
+        "seedName": "Knollenfenchel 'Fenno'"
+      },
+      {
+        "seedName": "Möhre Dolciva"
+      }
+    ],
+    "images": [
+      "/images/IMG_20260301_154222717_HDR~2.jpg"
+    ]
+  },
+  {
+    "id": "dab9fad7-4df0-4b56-8711-2b3da97bc952",
+    "name": "Beet 6",
+    "rows": [
+      {
+        "seedName": "Spitzkohl Berns"
+      }
     ]
   }
 ]
