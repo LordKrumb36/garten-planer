@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Spitzkohl Berns",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Schwerer, humoser und kalkhaltiger Boden. Regelmäßiges Hacken und Anhäufeln fördert Standfestigkeit. Schutz vor Kohlweißling durch Netze empfohlen. Anbaupause 3-4 Jahre einhalten.",
+    "calendar": {
+      "Feb": "V",
+      "Mär": "V/P",
+      "Apr": "V/P",
+      "Mai": "V/P",
+      "Jun": "V/P/E",
+      "Jul": "P/E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Sellerie", "Tomaten", "Buschbohnen", "Erbsen", "Salat", "Endivien", "Spinat", "Mangold", "Möhren", "Lauch", "Zwiebeln", "Dill"],
+    "badNeighbors": ["Andere Kohlarten", "Radieschen", "Rettich", "Senf", "Erdbeeren", "Knoblauch"]
+  }
+]

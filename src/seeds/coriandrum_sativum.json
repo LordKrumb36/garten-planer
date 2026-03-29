@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Coriandrum sativum Koriander",
+    "category": "Kräuter",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Lockerer, nährstoffreicher Boden. Dunkelkeimer (Saattiefe 1-2 cm). Kontinuierliche Nachsaat alle 3-4 Wochen für frisches Blattgrün empfohlen. Samenernte ab August/September, wenn sie braun werden.",
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V/D",
+      "Mai": "D",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "E",
+      "Sep": "E"
+    },
+    "goodNeighbors": ["Kohlarten", "Gurken", "Tomaten", "Rote Bete", "Salat", "Erbsen", "Kartoffeln", "Basilikum", "Dill"],
+    "badNeighbors": ["Fenchel", "Möhren", "Sellerie", "Petersilie", "Gartenkresse", "Schnittlauch"]
+  }
+]

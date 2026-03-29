@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Möhre Dolciva",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig. Tiefgründiger, steinfreier, lockerer Boden. Direktsaat (Saattiefe 1-2 cm). Gleichmäßige Feuchtigkeit wichtig für die Keimung. Sehr gute Lagermöhre mit hohem Zuckergehalt. Anbaupause 3-4 Jahre.",
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D",
+      "Jun": "D",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Zwiebeln", "Lauch", "Tomaten", "Erbsen", "Radieschen", "Dill", "Schnittlauch", "Salat"],
+    "badNeighbors": ["Pastinaken", "Petersilie", "Sellerie", "Rote Bete"]
+  }
+]

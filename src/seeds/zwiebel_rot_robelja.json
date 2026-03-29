@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Zwiebel Rot Robelja",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig und offen. Lockerer, feinkrümeliger Boden ohne frischen Mist. Saattiefe 1-2 cm. Gleichmäßig feucht halten während der Zwiebelbildung, danach eher trocken. Abreife abwarten (Laub knickt um). Anbaupause 4-5 Jahre.",
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D",
+      "Aug": "E",
+      "Sep": "E"
+    },
+    "goodNeighbors": ["Möhren", "Rote Bete", "Salate", "Erdbeeren", "Dill", "Schnittlauch", "Kamille"],
+    "badNeighbors": ["Erbsen", "Buschbohnen", "Stangenbohnen", "Kohlarten", "Lauch"]
+  }
+]

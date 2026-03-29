@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Radies Sora",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig. Anspruchslos, aber gleichmäßige Wasserversorgung ist essenziell für zarte Knollen. Saattiefe 1 cm. Sorte 'Sora' bleibt besonders lange fest und zart. Schutz vor Erdflöhen durch Vlies oder Hacken empfohlen.",
+    "calendar": {
+      "Feb": "D",
+      "Mär": "D",
+      "Apr": "D",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "D/E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Bohnen", "Erbsen", "Möhren", "Salat", "Spinat", "Kohlrabi", "Mangold", "Tomaten", "Petersilie"],
+    "badNeighbors": ["Andere Kohlarten", "Rettich", "Gurken", "Kürbis"]
+  }
+]

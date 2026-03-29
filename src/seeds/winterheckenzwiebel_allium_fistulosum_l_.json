@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Winterheckenzwiebel",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig. Lockerer, humoser Boden. Mehrjährig und absolut frosthart. Ernte der grünen Schlotten das ganze Jahr über möglich. Im ersten Jahr nicht zu tief ernten, damit sich der Horst etablieren kann. Saattiefe 1-2 cm.",
+    "calendar": {
+      "Mär": "D",
+      "Apr": "D/E",
+      "Mai": "D/E",
+      "Jun": "D/E",
+      "Jul": "D/E",
+      "Aug": "D/E",
+      "Sep": "E",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E",
+      "Jan": "E",
+      "Feb": "E"
+    },
+    "goodNeighbors": ["Möhren", "Erdbeeren", "Salat", "Endivien", "Kamille", "Dill"],
+    "badNeighbors": ["Erbsen", "Buschbohnen", "Stangenbohnen", "Kohlarten"]
+  }
+]
