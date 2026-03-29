@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Soja Hokkai Green",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sehr wärmebedürftig. Robuste, japanische Edamame-Sorte mit kompaktem Wuchs. Direktsaat erst bei gut erwärmtem Boden (ca. 20 °C). Staffelweise Aussaat alle 2 Wochen empfohlen für längere Erntezeit. Ernte, wenn Hülsen prall und hellgrün sind.",
+    "calendar": {
+      "Apr": "V",
+      "Mai": "V/D/P",
+      "Jun": "D/P",
+      "Aug": "E",
+      "Sep": "E"
+    },
+    "goodNeighbors": ["Mais", "Sonnenblumen", "Kohlarten", "Gurken", "Kartoffeln", "Radieschen", "Salat", "Spinat", "Tomaten"],
+    "badNeighbors": ["Erbsen", "Buschbohnen", "Stangenbohnen", "Zwiebeln", "Knoblauch", "Lauch", "Fenchel"]
+  }
+]

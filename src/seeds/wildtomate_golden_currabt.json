@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Wildtomate Golden Currant",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig. Sehr robuste, wüchsige Wildtomate mit kleinen, goldgelben Früchten. Muss kaum ausgegeizt werden. Kann im Freiland ohne Regenschutz angebaut werden. Ideal auch für Kübel oder Ampeln.",
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V",
+      "Mai": "P",
+      "Jun": "P",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Basilikum", "Knoblauch", "Zwiebeln", "Möhren", "Petersilie", "Salat", "Spinat", "Tagetes", "Buschbohnen", "Sellerie", "Kohlrabi"],
+    "badNeighbors": ["Erbsen", "Fenchel", "Kartoffeln", "Kohlgewächse", "Rote Bete"]
+  }
+]

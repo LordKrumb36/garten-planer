@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Stangenbohne Brunhilde",
+    "category": "Gemüse",
+    "nutrientConsumption": "Schwachzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig, warm und windgeschützt. Blauhülsige, fadenlose Sorte, die beim Kochen grün wird. Benötigt stabile Rankhilfe (mind. 2 m). Saattiefe 2-3 cm. Rohe Bohnen sind giftig! Ernte regelmäßig fördern Nachwuchs.",
+    "calendar": {
+      "Apr": "V",
+      "Mai": "V/D/P",
+      "Jun": "D/P",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Bohnenkraut", "Gurken", "Kohlarten", "Radieschen", "Rote Bete", "Salat", "Sellerie", "Spinat", "Tomaten"],
+    "badNeighbors": ["Erbsen", "Knoblauch", "Lauch", "Zwiebeln", "Schnittlauch"]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Tomate Marmorossa",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig und regengeschützt. Große, marmorierte Stabtomate. Regelmäßiges Ausgeizen und stabiler Halt wichtig. Hoher Nährstoff- und Wasserbedarf während der Fruchtbildung. Voranzucht im Haus.",
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V",
+      "Mai": "P",
+      "Jun": "P",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Basilikum", "Knoblauch", "Zwiebeln", "Möhren", "Petersilie", "Salat", "Spinat", "Tagetes", "Buschbohnen", "Sellerie", "Kohlrabi"],
+    "badNeighbors": ["Erbsen", "Fenchel", "Kartoffeln", "Kohlgewächse", "Rote Bete"]
+  }
+]

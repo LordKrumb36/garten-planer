@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Tomate Heart of Gold",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig und regengeschützt. Humusreicher Boden. Stabtomate: Regelmäßiges Ausgeizen und stabiler Stab zum Anbinden erforderlich. Voranzucht warm (20-25 °C). Pflanzung erst nach den letzten Frösten.",
+    "calendar": {
+      "Mär": "V",
+      "Apr": "V",
+      "Mai": "P",
+      "Jun": "P",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Basilikum", "Knoblauch", "Zwiebeln", "Möhren", "Petersilie", "Salat", "Spinat", "Tagetes", "Buschbohnen", "Sellerie", "Kohlrabi"],
+    "badNeighbors": ["Erbsen", "Fenchel", "Kartoffeln", "Kohlgewächse", "Rote Bete"]
+  }
+]

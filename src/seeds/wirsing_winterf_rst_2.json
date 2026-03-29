@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Wirsing Winterfürst 2",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Schwerer, nährstoffreicher Boden. Sehr frostharte Sorte für die Winterernte. Saattiefe 1-2 cm. Erde anhäufeln verbessert Standfestigkeit. Schutznetz gegen Schädlinge empfohlen.",
+    "calendar": {
+      "Mai": "V",
+      "Jun": "V/P",
+      "Jul": "P",
+      "Nov": "E",
+      "Dez": "E",
+      "Jan": "E",
+      "Feb": "E",
+      "Mär": "E"
+    },
+    "goodNeighbors": ["Sellerie", "Kartoffeln", "Erbsen", "Buschbohnen", "Salat", "Endivien", "Spinat", "Mangold", "Tomaten", "Dill", "Pfefferminze"],
+    "badNeighbors": ["Andere Kohlarten", "Erdbeeren", "Zwiebeln", "Knoblauch", "Lauch"]
+  }
+]

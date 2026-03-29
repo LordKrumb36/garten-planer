@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Brokkoli Calinaro",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "origin": "Bingenheimer Saatgut",
+    "instructions": "Sonnig bis halbschattig. Tiefgründiger, nährstoff- und humusreicher Boden. Voranzucht ab April. Nach der Haupternte des Kopfes bilden sich oft Seitentriebe, die ebenfalls geerntet werden können. Gleichmäßige Wasserversorgung wichtig. Anbaupause 3-4 Jahre.",
+    "calendar": {
+      "Apr": "V",
+      "Mai": "V/P",
+      "Jun": "V/P",
+      "Jul": "P",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Sellerie", "Tomaten", "Buschbohnen", "Erbsen", "Salat", "Endivien", "Spinat", "Mangold", "Dill", "Pfefferminze"],
+    "badNeighbors": ["Andere Kohlarten", "Erdbeeren", "Zwiebeln", "Knoblauch", "Lauch"]
+  }
+]
