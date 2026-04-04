@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Karotten (Dehner)",
+    "origin": "Dehner",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "instructions": "Sonnig. Benötigen tiefgründig lockeren, sandigen Boden ohne frischen Dünger. Als Jungpflanzen vorsichtig setzen, um die Pfahlwurzel nicht zu beschädigen. Abstand ca. 3-5 cm.",
+    "calendar": {
+      "Apr": "P",
+      "Mai": "P/E",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E"
+    },
+    "goodNeighbors": ["Dill", "Erbsen", "Knoblauch", "Lauch", "Radieschen", "Rosenkohl", "Schnittlauch", "Tomaten", "Zwiebeln"],
+    "badNeighbors": ["Rote Bete", "Petersilie", "Sellerie", "Pastinaken"]
+  }
+]

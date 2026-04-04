@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rosenkohl (Dehner)",
+    "origin": "Dehner",
+    "category": "Gemüse",
+    "nutrientConsumption": "Starkzehrer",
+    "instructions": "Sonnig bis halbschattig. Benötigt nährstoffreichen, schweren Boden und gleichmäßige Wasserversorgung. Pflanzabstand ca. 50x50 cm. Standfestigkeit durch Anhäufeln verbessern.",
+    "calendar": {
+      "Apr": "P",
+      "Mai": "P",
+      "Jun": "P",
+      "Jul": "P",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E",
+      "Nov": "E",
+      "Dez": "E"
+    },
+    "goodNeighbors": ["Buschbohnen", "Erbsen", "Karotten", "Kartoffeln", "Kopfsalat", "Rote Bete", "Sellerie", "Spinat", "Tomaten"],
+    "badNeighbors": ["Andere Kohlarten", "Zwiebeln", "Knoblauch"]
+  }
+]

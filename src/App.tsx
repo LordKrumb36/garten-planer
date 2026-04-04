@@ -441,11 +441,9 @@ function App() {
                         <ArrowRight size={14} />
                       </button>
                     </div>
-                    <input 
-                      className="bed-name-input"
-                      value={bed.name}
-                      onChange={(e) => handleUpdateBedName(bed.id, e.target.value)}
-                    />
+                    <div className="bed-name-display">
+                      Beet {index + 1}
+                    </div>
                     <button 
                       className={`gallery-trigger-btn ${(bed.images && bed.images.length > 0) ? 'has-images' : ''}`}
                       onClick={() => setSelectedBedForGallery(bed)}

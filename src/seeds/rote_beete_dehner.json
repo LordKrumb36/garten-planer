@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Rote Bete (Dehner)",
+    "origin": "Dehner",
+    "category": "Gemüse",
+    "nutrientConsumption": "Mittelzehrer",
+    "instructions": "Sonnig bis halbschattig. Bevorzugt lockeren, humosen Boden. Regelmäßig gießen, um das Verholzen der Knollen zu vermeiden. Als Jungpflanze im Abstand von ca. 10-15 cm setzen.",
+    "calendar": {
+      "Apr": "P",
+      "Mai": "P/E",
+      "Jun": "E",
+      "Jul": "E",
+      "Aug": "E",
+      "Sep": "E",
+      "Okt": "E"
+    },
+    "goodNeighbors": ["Buschbohnen", "Dill", "Erbsen", "Gurken", "Knoblauch", "Kohlrabi", "Kopfsalat", "Koriander", "Kümmel", "Pastinaken", "Radieschen", "Rosenkohl", "Zucchini", "Zwiebeln"],
+    "badNeighbors": ["Karotten", "Kartoffeln", "Lauch", "Mais", "Mangold", "Spinat", "Tomaten"]
+  }
+]

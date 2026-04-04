@@ -1,61 +1,16 @@
 [
   {
-    "id": "3d3756f5-bd8a-4982-93d3-2af824fb78c0",
-    "name": "Hauptbeet",
+    "id": "dab9fad7-4df0-4b56-8711-2b3da97bc952",
+    "name": "Beet 6",
     "rows": [
       {
-        "seedName": "Zuckererbse 'Ambrosia'"
-      },
-      {
-        "seedName": "Spinat 'Verdil' (Bingenheimer)"
-      },
-      {
-        "seedName": "Zuckererbse 'Ambrosia' (Bingenheimer)"
+        "seedName": "Spitzkohl Berns"
       }
-    ],
-    "images": [
-      "/images/IMG_20260301_152702975_HDR~2.jpg"
-    ]
-  },
-  {
-    "id": "c8ba3139-de63-4b8c-88fb-2e6173fc342c",
-    "name": "Beet 5",
-    "rows": [
-      {
-        "seedName": "Radies Rudi"
-      }
-    ]
-  },
-  {
-    "id": "9eec975e-8816-4ff5-a576-623754c4688d",
-    "name": "Beet 2",
-    "rows": [
-      {
-        "seedName": "Dicke Bohne 'Ratio'"
-      },
-      {
-        "seedName": "Dicke Bohne 'Ratio'"
-      }
-    ],
-    "images": [
-      "/images/IMG_20260223_160843290_HDR~2.jpg"
-    ]
-  },
-  {
-    "id": "dc1f42fb-1e6e-42b0-9023-3f445a79a354",
-    "name": "Beet 4",
-    "rows": [
-      {
-        "seedName": "Radieschen 'Trio'"
-      }
-    ],
-    "images": [
-      "/images/IMG_20260223_161240941_HDR~2.jpg"
     ]
   },
   {
     "id": "de51a380-21fc-4603-bc81-3d18e2884cc4",
-    "name": "Beet 3",
+    "name": "Beet 5",
     "rows": [
       {
         "seedName": "Knollenfenchel (Bingenheimer)"
@@ -72,12 +27,78 @@
     ]
   },
   {
-    "id": "dab9fad7-4df0-4b56-8711-2b3da97bc952",
-    "name": "Beet 6",
+    "id": "e7b1a2c3-d4e5-4f6g-7h8i-9j0k1l2m3n4o",
+    "name": "Beet 7",
     "rows": [
       {
-        "seedName": "Spitzkohl Berns"
+        "seedName": "Rote Bete (Dehner)"
       }
+    ]
+  },
+  {
+    "id": "dc1f42fb-1e6e-42b0-9023-3f445a79a354",
+    "name": "Beet 4",
+    "rows": [
+      {
+        "seedName": "Radieschen 'Trio'"
+      }
+    ],
+    "images": [
+      "/images/IMG_20260223_161240941_HDR~2.jpg"
+    ]
+  },
+  {
+    "id": "f8c2b3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+    "name": "Beet 8",
+    "rows": [
+      {
+        "seedName": "Karotten (Dehner)"
+      }
+    ]
+  },
+  {
+    "id": "9eec975e-8816-4ff5-a576-623754c4688d",
+    "name": "Beet 3",
+    "rows": [
+      {
+        "seedName": "Dicke Bohne 'Ratio'"
+      },
+      {
+        "seedName": "Dicke Bohne 'Ratio'"
+      },
+      {
+        "seedName": "Rosenkohl (Dehner)"
+      }
+    ],
+    "images": [
+      "/images/IMG_20260223_160843290_HDR~2.jpg"
+    ]
+  },
+  {
+    "id": "c8ba3139-de63-4b8c-88fb-2e6173fc342c",
+    "name": "Beet 2",
+    "rows": [
+      {
+        "seedName": "Radies Rudi"
+      }
+    ]
+  },
+  {
+    "id": "3d3756f5-bd8a-4982-93d3-2af824fb78c0",
+    "name": "Hauptbeet",
+    "rows": [
+      {
+        "seedName": "Zuckererbse 'Ambrosia'"
+      },
+      {
+        "seedName": "Spinat 'Verdil' (Bingenheimer)"
+      },
+      {
+        "seedName": "Zuckererbse 'Ambrosia' (Bingenheimer)"
+      }
+    ],
+    "images": [
+      "/images/IMG_20260301_152702975_HDR~2.jpg"
     ]
   }
 ]
