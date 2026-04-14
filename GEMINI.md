@@ -4,7 +4,7 @@ The Garten-Planer app is a specialized tool for managing garden beds and seed da
 1.  **Seed Management:** Individual seeds are stored in `src/seeds/` as JSON files. These are dynamically aggregated by `src/data.ts`. Data includes `name`, `category` (Gemüse, Kräuter, Salat, Blumen), `origin` (e.g., Bingenheimer), `instructions`, and companion planting info.
 2.  **Bed Planning:** Beds are configured in `beds_data.json` and persisted in `localStorage`. The UI allows real-time companion planting checks based on the seed data. Beds are automatically numbered from left to right (Beet 1, Beet 2, etc.) and can be dynamically reordered using the arrow controls.
 3.  **Jungpflanzen-Support:** The system supports both seeds and young plants. For young plants (e.g., from Dehner), the calendar starts directly with the planting phase ("P"), skipping the "V" and "D" phases.
-4.  **UI/UX:** The React frontend (Vite) provides a seasonal calendar and companion planting visualization.
+4.  **UI/UX:** The React frontend (Vite) provides a seasonal calendar, companion planting visualization, and a bed-specific image gallery for tracking progress. The layout is fully responsive and optimized for mobile (portrait mode) with sticky columns in the calendar table for easier navigation on small screens.
 5.  **Calendar Logic:**
     - **V**: Voranzucht (Indoor/Greenhouse)
     - **D**: Direktsaat (Direct sowing in bed, no prior Voranzucht)
