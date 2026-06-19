@@ -22,6 +22,21 @@ const generateId = () => {
   return Math.random().toString(36).substring(2, 11);
 };
 
+const monthNamesFull: Record<string, { name: string; desc: string }> = {
+  'Jan': { name: 'Januar', desc: 'Zeit für die Planung und erste Vorbereitungen.' },
+  'Feb': { name: 'Februar', desc: 'Erste Aussaaten auf der Fensterbank starten.' },
+  'Mär': { name: 'März', desc: 'Die Natur erwacht. Erste Freilandaussaaten beginnen.' },
+  'Apr': { name: 'April', desc: 'Der Frühling ist da! Hauptzeit für die Voranzucht.' },
+  'Mai': { name: 'Mai', desc: 'Nach den Eisheiligen dürfen alle Pflanzen ins Freie.' },
+  'Jun': { name: 'Juni', desc: 'Sommerbeginn. Regelmäßig gießen, pflegen und ernten.' },
+  'Jul': { name: 'Juli', desc: 'Hochsommer. Viel gießen und die erste reiche Ernte genießen.' },
+  'Aug': { name: 'August', desc: 'Erntezeit und Aussaat für den Herbst/Winter.' },
+  'Sep': { name: 'September', desc: 'Goldener Herbst. Zeit zum Ernten und Nachsäen.' },
+  'Okt': { name: 'Oktober', desc: 'Herbstpflege und Vorbereitung auf den Winter.' },
+  'Nov': { name: 'November', desc: 'Letzte Ernten und Winterschutz für Beete.' },
+  'Dez': { name: 'Dezember', desc: 'Ruhezeit im Garten. Planung für das nächste Jahr.' }
+};
+
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSeed, setSelectedSeed] = useState<SeedData | null>(null);
@@ -74,7 +89,10 @@ function App() {
     seed.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const currentMonth = 'Mär'; // Static for prototype
+  const [currentMonth, setCurrentMonth] = useState<string>(() => {
+    const currentMonthIndex = new Date().getMonth(); // 0-11
+    return months[currentMonthIndex];
+  });
   
   const activeThisMonth = allSeeds.filter(seed => 
     seed.calendar[currentMonth]
@@ -247,9 +265,13 @@ function App() {
         setIsAddModalOpen(false);
         setSeedToEdit(null);
         window.location.reload(); 
+      } else {
+        const errorData = await response.json();
+        alert(`Fehler beim Speichern: ${errorData.error || response.statusText}`);
       }
     } catch (err) {
       console.error(err);
+      alert('Ein Netzwerkfehler ist aufgetreten.');
     }
   };
 
@@ -325,7 +347,21 @@ function App() {
         <section className="dashboard-hero">
           <div className="hero-text">
             <h2>Willkommen zurück, Gärtner!</h2>
-            <p>Es ist <strong>März</strong>. Die Natur erwacht.</p>
+            <div className="month-picker-container">
+              <span>Es ist</span>
+              <select 
+                value={currentMonth} 
+                onChange={(e) => setCurrentMonth(e.target.value)}
+                className="hero-month-select"
+              >
+                {months.map(m => (
+                  <option key={m} value={m}>
+                    {monthNamesFull[m]?.name || m}
+                  </option>
+                ))}
+              </select>
+              <span>. {monthNamesFull[currentMonth]?.desc}</span>
+            </div>
           </div>
           <div className="month-stats">
             <div className="stat-card">
@@ -336,7 +372,7 @@ function App() {
         </section>
 
         <section className="spotlight">
-          <h3>🌱 Was du jetzt tun kannst (März)</h3>
+          <h3>🌱 Was du jetzt tun kannst ({monthNamesFull[currentMonth]?.name || currentMonth})</h3>
           <div className="spotlight-grid">
             <div className="spotlight-card direct">
               <h4>Aussaat Freiland / Pflanzung (Beet)</h4>

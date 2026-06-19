@@ -4,7 +4,22 @@
     "name": "Beet 6",
     "rows": [
       {
-        "seedName": "Spitzkohl Berns"
+        "seedName": "Zucchini"
+      }
+    ]
+  },
+  {
+    "id": "e3d3f156-3dcc-4e20-88f2-b704ff96930f",
+    "name": "Beet 9",
+    "rows": [
+      {
+        "seedName": "Lauch"
+      },
+      {
+        "seedName": "Tomate Heart of Gold"
+      },
+      {
+        "seedName": "Lauch"
       }
     ]
   },
