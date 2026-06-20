@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Sprout, Calendar, Info, Leaf, Search, ThumbsUp, ThumbsDown, Plus, X, RefreshCw, Edit, Trash2, Camera, Image as ImageIcon, Cloud, ArrowLeft, ArrowRight } from 'lucide-react';
 import { seedData as staticSeedData, months, SeedData } from './data';
 import staticBedsData from './beds_data.json';
+import documentationData from './documentation_data.json';
 import './App.css';
 
 interface Row {
@@ -52,6 +53,51 @@ function App() {
   const [seedToEdit, setSeedToEdit] = useState<SeedData | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [customSeeds, setCustomSeeds] = useState<SeedData[]>([]);
+
+  const [activeTab, setActiveTab] = useState<'planer' | 'doku'>('planer');
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  // Flatten all images in the timeline for lightbox navigation
+  const allTimelineImages = (documentationData as any[]).flatMap(section => 
+    section.entries.flatMap((entry: any) => entry.images)
+  );
+
+  const handlePrevImage = () => {
+    if (!lightboxImage) return;
+    const currentIndex = allTimelineImages.indexOf(lightboxImage);
+    if (currentIndex > 0) {
+      setLightboxImage(allTimelineImages[currentIndex - 1]);
+    } else {
+      setLightboxImage(allTimelineImages[allTimelineImages.length - 1]);
+    }
+  };
+
+  const handleNextImage = () => {
+    if (!lightboxImage) return;
+    const currentIndex = allTimelineImages.indexOf(lightboxImage);
+    if (currentIndex < allTimelineImages.length - 1) {
+      setLightboxImage(allTimelineImages[currentIndex + 1]);
+    } else {
+      setLightboxImage(allTimelineImages[0]);
+    }
+  };
+
+  const filteredTimeline = (documentationData as any[]).map(section => {
+    const isDateMatch = searchTerm && (
+      section.date.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      section.formattedDate.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    
+    const matchingEntries = section.entries.filter((entry: any) => {
+      if (!searchTerm || isDateMatch) return true;
+      return entry.text && entry.text.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+    
+    return {
+      ...section,
+      entries: matchingEntries
+    };
+  }).filter(section => section.entries.length > 0);
   const [beds, setBeds] = useState<Bed[]>(() => {
     try {
       // Priority 1: Check if we have bundled beds data (from git/cloud)
@@ -320,7 +366,7 @@ function App() {
             <Search size={20} />
             <input 
               type="text" 
-              placeholder="Saatgut suchen..." 
+              placeholder={activeTab === 'planer' ? "Saatgut suchen..." : "Dokumentation suchen..."} 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -343,10 +389,27 @@ function App() {
         </div>
       </header>
 
+      <div className="tab-navigation">
+        <button 
+          className={`tab-btn ${activeTab === 'planer' ? 'active' : ''}`}
+          onClick={() => setActiveTab('planer')}
+        >
+          <Leaf size={18} /> Planer & Kalender
+        </button>
+        <button 
+          className={`tab-btn ${activeTab === 'doku' ? 'active' : ''}`}
+          onClick={() => { setActiveTab('doku'); setSearchTerm(''); }}
+        >
+          <Camera size={18} /> Foto-Dokumentation 2026
+        </button>
+      </div>
+
       <main className="main-content">
-        <section className="dashboard-hero">
-          <div className="hero-text">
-            <h2>Willkommen zurück, Gärtner!</h2>
+        {activeTab === 'planer' ? (
+          <>
+            <section className="dashboard-hero">
+              <div className="hero-text">
+                <h2>Willkommen zurück, Gärtner!</h2>
             <div className="month-picker-container">
               <span>Es ist</span>
               <select 
@@ -545,6 +608,74 @@ function App() {
             ))}
           </div>
         </section>
+        </>
+        ) : (
+          <div className="documentation-timeline-container">
+            <header className="timeline-header">
+              <h2>Foto-Dokumentation & Gartentagebuch 2026</h2>
+              <p className="timeline-intro">
+                Hier findest du alle chronologischen Einträge und Bilder zu deinen angebauten Pflanzen der Saison 2026, automatisch extrahiert aus deiner Dokumentation.
+              </p>
+            </header>
+
+            <div className="timeline-wrapper">
+              {filteredTimeline.length === 0 ? (
+                <div className="empty-timeline">
+                  <Search size={48} className="empty-icon" />
+                  <p>Keine Einträge für "{searchTerm}" gefunden.</p>
+                </div>
+              ) : (
+                <div className="timeline">
+                  {filteredTimeline.map((section: any) => (
+                    <div key={section.date} className="timeline-section">
+                      <div className="timeline-date-marker">
+                        <div className="timeline-date-bubble">
+                          <span className="dot"></span>
+                          <span className="date-text">{section.formattedDate}</span>
+                        </div>
+                      </div>
+                      
+                      <div className="timeline-content-card">
+                        {section.entries.map((entry: any, eIdx: number) => (
+                          <div key={eIdx} className="timeline-entry">
+                            {entry.text && (
+                              <div className="timeline-text-bubble">
+                                <span className="bubble-arrow"></span>
+                                <p>{entry.text}</p>
+                              </div>
+                            )}
+                            
+                            {entry.images && entry.images.length > 0 && (
+                              <div className="timeline-image-grid">
+                                {entry.images.map((img: string) => (
+                                  <div 
+                                    key={img} 
+                                    className="timeline-image-wrapper"
+                                    onClick={() => setLightboxImage(img)}
+                                  >
+                                    <img 
+                                      src={`/images/${img}`} 
+                                      alt={entry.text || "Gartenentwicklung 2026"} 
+                                      loading="lazy"
+                                    />
+                                    <div className="image-overlay">
+                                      <Search size={24} className="zoom-icon" />
+                                      <span className="image-filename">{img}</span>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </main>
 
       {/* Add Seed Modal */}
@@ -759,6 +890,35 @@ function App() {
               )}
             </div>
           </div>
+        </div>
+      )}
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <div className="lightbox-overlay" onClick={() => setLightboxImage(null)}>
+          <button className="lightbox-close" onClick={() => setLightboxImage(null)}>
+            <X size={32} />
+          </button>
+          
+          <button 
+            className="lightbox-nav prev" 
+            onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
+          >
+            <ArrowLeft size={36} />
+          </button>
+          
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img src={`/images/${lightboxImage}`} alt="Gartenansicht vergrößert" />
+            <div className="lightbox-caption">
+              {lightboxImage} ({allTimelineImages.indexOf(lightboxImage) + 1} von {allTimelineImages.length})
+            </div>
+          </div>
+          
+          <button 
+            className="lightbox-nav next" 
+            onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
+          >
+            <ArrowRight size={36} />
+          </button>
         </div>
       )}
     </div>

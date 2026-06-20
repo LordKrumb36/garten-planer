@@ -1348,3 +1348,355 @@ tr:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #718096;
+  cursor: pointer;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.tab-btn:hover {
+  color: #2d3748;
+  background: #edf2f7;
+}
+
+.tab-btn.active {
+  color: #276749;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #38a169;
+  border-radius: 99px;
+}
+
+/* Documentation Timeline Styles */
+.documentation-timeline-container {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.timeline-header {
+  margin-bottom: 2.5rem;
+}
+
+.timeline-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-intro {
+  color: #4a5568;
+  font-size: 1.1rem;
+  max-width: 800px;
+}
+
+.timeline-wrapper {
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* Vertical Timeline Line */
+.timeline-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  top: 1rem;
+  bottom: 1rem;
+  width: 3px;
+  background-color: #cbd5e0;
+  border-radius: 99px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-section {
+  position: relative;
+}
+
+.timeline-date-marker {
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  transform: translate(-100%, 0);
+  z-index: 10;
+}
+
+.timeline-date-bubble {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #276749 0%, #38a169 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(56, 161, 105, 0.25);
+  white-space: nowrap;
+}
+
+.timeline-date-bubble .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.timeline-content-card {
+  background: white;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.timeline-content-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-entry:not(:last-child) {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.timeline-text-bubble {
+  background-color: #f0fff4;
+  border-left: 4px solid #38a169;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 1rem 1rem 1rem;
+  position: relative;
+}
+
+.timeline-text-bubble p {
+  margin: 0;
+  color: #276749;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.timeline-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.timeline-image-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.timeline-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-image-wrapper:hover img {
+  transform: scale(1.08);
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.timeline-image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.zoom-icon {
+  transform: translateY(10px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-image-wrapper:hover .zoom-icon {
+  transform: translateY(0);
+}
+
+.image-filename {
+  font-size: 0.8rem;
+  font-family: monospace;
+  opacity: 0.8;
+}
+
+.empty-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  color: #a0aec0;
+  text-align: center;
+  background: white;
+  border-radius: 1.25rem;
+  border: 1px dashed #cbd5e0;
+}
+
+.empty-icon {
+  margin-bottom: 1.5rem;
+  color: #cbd5e0;
+}
+
+/* Lightbox Modal */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 15, 10, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 100;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.lightbox-nav.prev {
+  left: 2rem;
+}
+
+.lightbox-nav.next {
+  right: 2rem;
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  max-height: 80vh;
+  gap: 1.5rem;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lightbox-caption {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  font-family: monospace;
+}
+
+/* Timeline Responsive Design */
+@media (max-width: 900px) {
+  .timeline-wrapper {
+    padding-left: 0;
+  }
+
+  .timeline-wrapper::before {
+    display: none;
+  }
+
+  .timeline-date-marker {
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+}
