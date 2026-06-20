@@ -1,35 +1,65 @@
 [
   {
-    "id": "dab9fad7-4df0-4b56-8711-2b3da97bc952",
-    "name": "Beet 6",
+    "id": "1930135a-7084-4223-9c0a-40f450aef723",
+    "name": "Beet 1",
     "rows": [
       {
         "seedName": "Zucchini"
+      },
+      {
+        "seedName": "Wildtomate Golden Currant"
       }
-    ]
+    ],
+    "images": []
   },
   {
-    "id": "e3d3f156-3dcc-4e20-88f2-b704ff96930f",
-    "name": "Beet 9",
+    "id": "e65d72ca-5835-40f7-aab6-a0540560c298",
+    "name": "Beet 2",
     "rows": [
       {
         "seedName": "Lauch"
+      },
+      {
+        "seedName": "Gurke"
+      },
+      {
+        "seedName": "Kohlrabi 'Azur Star'"
+      }
+    ],
+    "images": [
+      "/images/image1.jpg"
+    ]
+  },
+  {
+    "id": "99170ee6-f2bb-43b1-a76a-9840fd016ede",
+    "name": "Beet 3",
+    "rows": [
+      {
+        "seedName": "Spitzkohl Berns"
       },
       {
         "seedName": "Tomate Heart of Gold"
-      },
-      {
-        "seedName": "Lauch"
       }
-    ]
+    ],
+    "images": []
   },
   {
-    "id": "de51a380-21fc-4603-bc81-3d18e2884cc4",
-    "name": "Beet 5",
+    "id": "5bca826e-2ebd-4d04-8cb4-a3ae3ab0b5d9",
+    "name": "Beet 4",
     "rows": [
       {
-        "seedName": "Knollenfenchel (Bingenheimer)"
+        "seedName": "Kartoffeln"
       },
+      {
+        "seedName": "Kümmel"
+      }
+    ],
+    "images": []
+  },
+  {
+    "id": "ab0adc09-955e-4138-aa65-9aef5214a79e",
+    "name": "Beet 5",
+    "rows": [
       {
         "seedName": "Knollenfenchel 'Fenno'"
       },
@@ -38,82 +68,152 @@
       }
     ],
     "images": [
-      "/images/IMG_20260301_154222717_HDR~2.jpg"
+      "/images/image25.jpg"
     ]
   },
   {
-    "id": "e7b1a2c3-d4e5-4f6g-7h8i-9j0k1l2m3n4o",
-    "name": "Beet 7",
+    "id": "cc69cbfd-5c3d-4b3f-abda-7a33edf3360e",
+    "name": "Beet 6",
     "rows": [
       {
         "seedName": "Rote Bete (Dehner)"
-      }
-    ]
-  },
-  {
-    "id": "dc1f42fb-1e6e-42b0-9023-3f445a79a354",
-    "name": "Beet 4",
-    "rows": [
+      },
       {
-        "seedName": "Radieschen 'Trio'"
+        "seedName": "Sonnenblume"
+      },
+      {
+        "seedName": "Spitzkohl Berns"
+      },
+      {
+        "seedName": "Sellerie Monarch"
       }
     ],
-    "images": [
-      "/images/IMG_20260223_161240941_HDR~2.jpg"
-    ]
+    "images": []
   },
   {
-    "id": "f8c2b3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+    "id": "5495f77d-4f21-4a82-ac7e-afa9b45beedd",
+    "name": "Beet 7",
+    "rows": [
+      {
+        "seedName": "Stangenbohne Brunhilde"
+      },
+      {
+        "seedName": "Kamille"
+      },
+      {
+        "seedName": "Kohlrabi Blaro"
+      }
+    ],
+    "images": []
+  },
+  {
+    "id": "47d3ec10-5415-449c-884e-60e3f6d862dd",
     "name": "Beet 8",
     "rows": [
       {
         "seedName": "Karotten (Dehner)"
-      }
-    ]
-  },
-  {
-    "id": "9eec975e-8816-4ff5-a576-623754c4688d",
-    "name": "Beet 3",
-    "rows": [
-      {
-        "seedName": "Dicke Bohne 'Ratio'"
       },
       {
-        "seedName": "Dicke Bohne 'Ratio'"
-      },
-      {
-        "seedName": "Rosenkohl (Dehner)"
+        "seedName": "Wirsing Dunkelgrüner Putjes"
       }
     ],
     "images": [
-      "/images/IMG_20260223_160843290_HDR~2.jpg"
+      "/images/image32.jpg"
     ]
   },
   {
-    "id": "c8ba3139-de63-4b8c-88fb-2e6173fc342c",
-    "name": "Beet 2",
+    "id": "69d96e8b-11b1-4020-adbc-5dedce15d59b",
+    "name": "Beet 9",
     "rows": [
       {
-        "seedName": "Radies Rudi"
+        "seedName": "Dicke Bohne 'Ratio'"
+      },
+      {
+        "seedName": "Artischocke 'Green Globe'"
+      },
+      {
+        "seedName": "Wirsing Winterfürst 2"
       }
+    ],
+    "images": []
+  },
+  {
+    "id": "c3071a2d-1f15-47bc-96c3-bf5763393bc3",
+    "name": "Beet 10",
+    "rows": [
+      {
+        "seedName": "Grünkohl 'Lerchenzungen'"
+      }
+    ],
+    "images": []
+  },
+  {
+    "id": "fc384fbf-ef92-4f93-9db0-01ea9f629538",
+    "name": "Beet 11",
+    "rows": [
+      {
+        "seedName": "Bunter Mangold"
+      },
+      {
+        "seedName": "Kohlrabi 'Azur Star'"
+      }
+    ],
+    "images": [
+      "/images/image31.jpg"
     ]
   },
   {
-    "id": "3d3756f5-bd8a-4982-93d3-2af824fb78c0",
-    "name": "Hauptbeet",
+    "id": "e3e7d29c-743c-4218-b53a-92af8adee51e",
+    "name": "Beet 12",
     "rows": [
+      {
+        "seedName": "Rosenkohl (Dehner)"
+      },
       {
         "seedName": "Zuckererbse 'Ambrosia'"
       },
       {
-        "seedName": "Spinat 'Verdil' (Bingenheimer)"
+        "seedName": "Melone"
       },
       {
-        "seedName": "Zuckererbse 'Ambrosia' (Bingenheimer)"
+        "seedName": "Kohlrabi Blaro"
       }
     ],
     "images": [
-      "/images/IMG_20260301_152702975_HDR~2.jpg"
+      "/images/image19.jpg"
+    ]
+  },
+  {
+    "id": "597ce3e8-4c8c-4273-9930-a4aeddd5373d",
+    "name": "Beet 13",
+    "rows": [
+      {
+        "seedName": "Artischocke 'Green Globe'"
+      },
+      {
+        "seedName": "Kartoffeln"
+      }
+    ],
+    "images": [
+      "/images/image24.jpg"
+    ]
+  },
+  {
+    "id": "262d8d4b-5469-463d-9a7e-559a0e563009",
+    "name": "Gewächshaus",
+    "rows": [
+      {
+        "seedName": "Tomate Marmorossa"
+      },
+      {
+        "seedName": "Paprika"
+      },
+      {
+        "seedName": "Aubergine"
+      }
+    ],
+    "images": [
+      "/images/image3.jpg"
     ]
   }
 ]
