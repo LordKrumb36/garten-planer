@@ -4,15 +4,16 @@ The Garten-Planer app is a specialized tool for managing garden beds and seed da
 1.  **Seed Management:** Individual seeds are stored in `src/seeds/` as JSON files. These are dynamically aggregated by `src/data.ts`. Data includes `name`, `category` (Gemüse, Kräuter, Salat, Blumen), `origin` (e.g., Bingenheimer), `instructions`, and companion planting info.
 2.  **Bed Planning:** Beds are configured in `beds_data.json` and persisted in `localStorage`. The UI allows real-time companion planting checks based on the seed data. Beds are automatically numbered from left to right (Beet 1, Beet 2, etc.) and can be dynamically reordered using the arrow controls.
 3.  **Jungpflanzen-Support:** The system supports both seeds and young plants. For young plants (e.g., from Dehner), the calendar starts directly with the planting phase ("P"), skipping the "V" and "D" phases.
-4.  **UI/UX:** The React frontend (Vite) provides a seasonal calendar, companion planting visualization, and a bed-specific image gallery for tracking progress. The layout is fully responsive and optimized for mobile (portrait mode) with sticky columns in the calendar table for easier navigation on small screens.
-5.  **Calendar Logic:**
+4.  **Foto-Dokumentation 2026:** Integrates historical plant growth data and photo records directly from the `Garten 2026.docx` file. This data is structured in `src/documentation_data.json` and presented in a dedicated visual timeline view in the UI.
+5.  **UI/UX:** The React frontend (Vite) provides a seasonal calendar, companion planting visualization, and a bed-specific image gallery for tracking progress. The layout is fully responsive and optimized for mobile (portrait mode) with sticky columns in the calendar table for easier navigation on small screens.
+6.  **Calendar Logic:**
     - **V**: Voranzucht (Indoor/Greenhouse)
     - **D**: Direktsaat (Direct sowing in bed, no prior Voranzucht)
     - **P**: Pflanzung (Transplanting to bed after Voranzucht)
     - **E**: Ernte (Harvest)
-5.  **Resources:** The UI provides direct access to the official Bingenheimer seed calendar and companion planting guides (`Mischkulturen.pdf`).
-6.  **Automatic Research:** `watcher.js` identifies seeds with missing `instructions` and logs them to `pending_research.log`.
-7.  **Agent Mandate:** Gemini CLI scans for "pending" seeds, performs research (via `gartentipp313.pdf` & web search), and updates the JSON files with `instructions`, `goodNeighbors`, `badNeighbors`, and `origin`. **If `origin` is specified, it MUST be included in the web search query for higher precision.** Otherwise, a general search is performed.
+7.  **Resources:** The UI provides direct access to the official Bingenheimer seed calendar and companion planting guides (`Mischkulturen.pdf`).
+8.  **Automatic Research:** `watcher.js` identifies seeds with missing `instructions` and logs them to `pending_research.log`.
+9.  **Agent Mandate:** Gemini CLI scans for "pending" seeds, performs research (via `gartentipp313.pdf` & web search), and updates the JSON files with `instructions`, `goodNeighbors`, `badNeighbors`, and `origin`. **If `origin` is specified, it MUST be included in the web search query for higher precision.** Otherwise, a general search is performed.
 
 ## Main Commands
 
